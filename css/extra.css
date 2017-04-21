@@ -1,0 +1,30 @@
+.monospace-body {
+    font: 15px "Fira Mono", sans-serif;
+}
+
+.monospace-header {
+    font-family: "Share Tech Mono", sans-serif !important;
+}
+
+.content-box {
+    background: #292b2e;
+    padding: 0.5em 1.2em;
+    width: 100%;
+    margin-bottom: 2em;
+    line-height: 1.5em;
+}
+
+.accent-orange {
+    color: #d18547;
+}
+
+.accent-pink {
+    color: #d23f95;
+}
+
+@media only screen and (min-width: 640px) {
+
+    .content-box {
+        width: 30em;
+    }
+}
