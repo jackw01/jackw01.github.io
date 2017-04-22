@@ -12,6 +12,24 @@
     width: 100%;
     margin-bottom: 2em;
     line-height: 1.5em;
+    -webkit-transition: all 0ms, transform 200ms ease;
+    -moz-transition: transform 200ms ease;
+    -o-transition: transform 200ms ease;
+    transition: all 0ms;
+}
+
+.bottom-right-box {
+    background: #191b1e;
+    font-weight: 600;
+    font-size: 1.1em;
+    position: fixed;
+    padding: 10px;
+    bottom: 0px;
+    right: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
 }
 
 .accent-orange {
