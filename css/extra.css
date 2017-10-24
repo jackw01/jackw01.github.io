@@ -1,14 +1,10 @@
 .monospace-body {
-    font: 15px "Fira Mono", sans-serif;
-}
-
-.monospace-header {
-    font-family: "Share Tech Mono", sans-serif !important;
+    font: 16px "Fira Mono", sans-serif;
 }
 
 .content-box {
     background: #292b2e;
-    padding: 0.5em 1.2em;
+    padding: 0.8em 1.2em;
     width: 100%;
     margin-bottom: 2em;
     line-height: 1.5em;
