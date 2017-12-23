@@ -9,6 +9,12 @@
     color: #646464;
 }
 
+.mainpage-header {
+    font-family: Barlow;
+    font-weight: 100;
+    font-size: 3em;
+}
+
 .border-teal {
     border-left: 3px solid #00b2bd;
 }
