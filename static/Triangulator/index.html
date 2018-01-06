@@ -1,0 +1,228 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Fira+Mono:400,500|Titillium+Web:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title>TriangleMaker</title>
+        <meta name="description" content="TriangleMaker: generate geometric wallpapers for iOS, Android, and your computer">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/Apple Home Screen Icon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/extra.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86167050-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-86167050-2');
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an outdated browser. Please <a href="https://www.google.com/chrome/browser/desktop/index.html">download Google Chrome</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="modal-container" id="save-modal-container" style="display:none">
+            <div class="modal">
+                <div class="modal-header">
+                        <h3 class="modal-title">Save Wallpaper</h3>
+                        <a class="modal-close-button dark-button">&#10005;</a>
+                </div>
+                <div class="modal-content">
+                    <table class="input-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Resolution:
+                                </td>
+                                <td>
+                                    <span class="select-container dark-button" style="width:216px">
+                                        <select style="width:216px" id="select-resolution">
+                                            <option value="0">Automatic</option>
+                                            <option value="1920x1080s0">1920x1080 (Full HD 1080p)</option>
+                                            <option value="2560x1080s0">2560x1080 (1080p Ultrawide)</option>
+                                            <option value="1920x1200s0">1920x1200</option>
+                                            <option value="2560x1440s0">2560x1440 (Quad HD 1440p)</option>
+                                            <option value="3440x1440s0">3440x1440 (1440p Ultrawide)</option>
+                                            <option value="2560x1600s0">2560x1600</option>
+                                            <option value="3840x2160s0">3840x2160 (4K UHD)</option>
+                                            <option value="5120x2880s0">5120x2880 (5K)</option>
+                                            <option value="2732x2732s2">iPad/iPhone</option>
+                                            <option value="2920x2560s2">Android Phone</option>
+                                        </select>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <a class="button button-rect dark-button" id="final-save-button">Save</a>
+                </div>
+            </div>
+        </div>
+        <div class="canvas-container"><canvas id="canvas">Your browser does not support HTML5 Canvas.</canvas></div>
+        <canvas id="renderCanvas" width="1024" height="1" style="display:none"></canvas>
+        <div class="controls-container">
+            <table class="input-table">
+                <tr>
+                    <td>
+                        <span class="label">Tile size </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="25" max="150" step="1" value="35" class="dark-slider" id="cell-size"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="label">Tile variation </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="0.2" step="0.01" value="0.075" class="dark-slider" id="variation"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="label">Gradient mode </span>
+                    </td>
+                    <td>
+                        <span class="select-container dark-button" style="width:200px">
+                            <select style="width:200px" id="select-color-mode">
+                                <option value="1">Interpolate X/Y</option>
+                                <option value="2">Interpolate -X/Y</option>
+                                <option value="8">From Edges</option>
+                                <option value="0">From Center</option>
+                                <option value="6">Bottom Radial</option>
+                                <option value="5">Random Pattern</option>
+                                <option value="3">X</option>
+                                <option value="4">Y</option>
+                                <option value="7">Stripe</option>
+                            </select>
+                        </span>
+                    </td>
+                </tr>
+                <tbody id="noise-controls" style="display:none">
+                    <tr>
+                        <td>
+                            <span class="label">X scale </span>
+                        </td>
+                        <td>
+                            <span class="slider-container"><input type="range" style="width:216px" min="0.01" max="5" step="0.01" value="1" class="dark-slider" id="noise-scale-x"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label">Y scale </span>
+                        </td>
+                        <td>
+                            <span class="slider-container"><input type="range" style="width:216px" min="0.01" max="5" step="0.01" value="1" class="dark-slider" id="noise-scale-y"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <a class="button button-rect button-rect-small dark-button" id="noise-randomize">Randomize</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td>
+                        <span class="label">Color variation </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="90" step="1" value="20" class="dark-slider" id="color-variation"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="label">Colors </span>
+                    </td>
+                    <td>
+                        <span class="select-container dark-button" style="width:200px">
+                            <select style="width:200px" id="select-colors">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </span>
+                    </td>
+                </tr>
+                <tr id="color-0">
+                    <td>
+                        <span class="label">Color 1 </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="360" step="1" value="59" class="dark-slider slider-hue" id="hue-0"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-lightness" id="lightness-0"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-saturation" id="saturation-0"></span>
+                    </td>
+                </tr>
+                <tr id="color-1">
+                    <td>
+                        <span class="label">Color 2 </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="360" step="1" value="59" class="dark-slider slider-hue" id="hue-1"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-lightness" id="lightness-1"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-saturation" id="saturation-1"></span>
+                    </td>
+                </tr>
+                <tr id="color-2">
+                    <td>
+                        <span class="label">Color 3 </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="360" step="1" value="206" class="dark-slider slider-hue" id="hue-2"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-lightness" id="lightness-2"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-saturation" id="saturation-2"></span>
+                    </td>
+                </tr>
+                <tr id="color-3">
+                    <td>
+                        <span class="label">Color 4 </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="360" step="1" value="206" class="dark-slider slider-hue" id="hue-3"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-lightness" id="lightness-3"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-saturation" id="saturation-3"></span>
+                    </td>
+                </tr>
+                <tr id="color-4">
+                    <td>
+                        <span class="label">Color 5 </span>
+                    </td>
+                    <td>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="360" step="1" value="206" class="dark-slider slider-hue" id="hue-4"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-lightness" id="lightness-4"></span><br>
+                        <span class="slider-container"><input type="range" style="width:216px" min="0" max="1" step="0.01" value="1" class="dark-slider slider-saturation" id="saturation-4"></span>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <!--<a class="button button-rect" style="margin-right:0.9em" id="randomize-button">Randomize Colors</a>-->
+            <a class="button button-rect dark-button" id="save-button">Save Wallpaper...</a>
+        </div>
+        <div class="infotext">
+            © 2017 <a href="http://github.com/jackw01">jackw01</a><br>
+            Released under the MIT license
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/chroma.min.js"></script>
+        <script src="js/canvasutils.js"></script>
+        <script src="js/perlinnoise.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
