@@ -6,11 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans:300,300i,400,400i,600,600i,700,700i|Titillium+Web:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <title>Index</title>
-        <meta name="description" content="Triangulator: generate geometric wallpapers for iOS, Android, and your computer">
-        <meta name="google-site-verification" content="kOVLMPsnEoT57QSHlG70p9KzPI5fEVWInoArg6Q9Wyc" />
+        <title>IconScaler</title>
+        <meta name="description" content="IconScaler">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -20,6 +19,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/extra.css">
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body class="body-dark">
@@ -28,17 +28,43 @@
         <![endif]-->
         <main>
             <div class="main wrapper clearfix">
-                <h1 class="h1-light">Hi there.</h1><br>
-                <div class="content-box">
-                    <a href="static/strange-attractors/index.html">Strange Attractors</a><br>
-                    <a href="static/Triangulator/index.html">Triangulator</a><br>
-                </div>
-                <div class="content-box">
-                    <a href="https://www.github.com/jackw01">@jackw01</a><br>
-                </div>
+                <h1 class="mainpage-header">IconScaler</h1>
+                <span class="smalltext">© 2018 <a href="http://github.com/jackw01">jackw01</a>. Released under the MIT license. Built with <a href="https://github.com/Stuk/jszip">JSZip</a> and <a href="https://github.com/eligrey/FileSaver.js/">FileSaver.js</a>.</span>
+                <br><br>
+                <table class="input-table">
+                    <tr>
+                        <td>
+                            Upload Image:
+                        </td>
+                        <td>
+                            <input type="file" id="input-image"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Operating System:
+                        </td>
+                        <td>
+                            <span class="select-container dark-button" style="width:100px">
+                                <select style="width:100px" id="select-os">
+                                    <option value="iOS">iOS</option>
+                                    <option value="Android">Android</option>
+                                </select>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <a class="button button-rect dark-button" id="button-generate">Generate Icons</a>
             </div>
         </main>
+        <canvas id="canvas" width="2048" height="2048" style="display:none"></canvas>
+        <canvas id="canvas-temp1" width="2048" height="2048" style="display:none"></canvas>
+        <canvas id="canvas-temp2" width="2048" height="2048" style="display:none"></canvas>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/jszip.min.js"></script>
+        <script src="js/FileSaver.min.js"></script>
+        <script src="js/main.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

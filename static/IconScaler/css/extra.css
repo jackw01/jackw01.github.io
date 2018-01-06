@@ -1,0 +1,58 @@
+.link-box {
+    padding: 0.8em 1.2em;
+    margin-bottom: 2em;
+    line-height: 1.4em;
+    -webkit-transition: all 0ms, transform 200ms ease;
+    -moz-transition: transform 200ms ease;
+    -o-transition: transform 200ms ease;
+    transition: all 0ms;
+    color: #646464;
+}
+
+.mainpage-header {
+    font-family: Barlow;
+    font-weight: 100;
+    font-size: 2.6em;
+    margin-bottom: 0.3em;
+}
+
+.smalltext {
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.border-teal {
+    border-left: 3px solid #00b2bd;
+}
+
+.border-pink {
+    border-left: 3px solid #f2289b;
+}
+
+.accent-teal {
+    color: #00b2bd;
+}
+
+.accent-pink {
+    color: #f2289b;
+}
+
+.input-table {
+    margin-top: 5px;
+}
+
+.input-table td {
+    padding-top: 0.4em;
+    padding-right: 1em;
+}
+
+canvas {
+    image-rendering: auto;
+}
+
+@media only screen and (min-width: 640px) {
+
+    .content-box {
+        width: 30em;
+    }
+}
