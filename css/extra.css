@@ -31,6 +31,23 @@
     color: #f2289b;
 }
 
+.screenshot-container {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.screenshot {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 1em;
+}
+
+.hero {
+    max-width:100%;
+    max-height:100%;
+}
+
 @media only screen and (min-width: 640px) {
 
     .content-box {

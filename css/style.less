@@ -208,12 +208,15 @@ img {
 
 hr {
     width: 100%;
-    margin: 2em;
+    margin: 1.5em;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 0;
-    border-top: 1px solid #E0E0E0;
+}
+
+.body-dark hr {
+    border-top: 1px solid lighten(@background-dark, 10%);
 }
 
 /* Links and Buttons */
@@ -796,11 +799,6 @@ iframe {
         float: none;
         width: 90%;
     }
-
-    .hero {
-        max-width:100%;
-        max-height:100%;
-    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -836,10 +834,6 @@ iframe {
     .main aside.left {
         float: left;
         width: 38%;
-    }
-
-    .hero {
-        width: 960px;
     }
 }
 
