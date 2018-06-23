@@ -21,22 +21,6 @@
     font-weight: 200;
 }
 
-.border-teal {
-    border-left: 3px solid #00b2bd;
-}
-
-.border-pink {
-    border-left: 3px solid #f2289b;
-}
-
-.accent-teal {
-    color: #00b2bd;
-}
-
-.accent-pink {
-    color: #f2289b;
-}
-
 .input-table {
     margin-top: 5px;
 }

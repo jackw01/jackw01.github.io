@@ -1,14 +1,3 @@
-.link-box {
-    padding: 0.8em 1.2em;
-    margin-bottom: 2em;
-    line-height: 1.4em;
-    -webkit-transition: all 0ms, transform 200ms ease;
-    -moz-transition: transform 200ms ease;
-    -o-transition: transform 200ms ease;
-    transition: all 0ms;
-    color: #646464;
-}
-
 .mainpage-header {
     font-family: Barlow;
     font-weight: 100;
@@ -19,22 +8,6 @@
 .smalltext {
     font-size: 11px;
     font-weight: 200;
-}
-
-.border-teal {
-    border-left: 3px solid #00b2bd;
-}
-
-.border-pink {
-    border-left: 3px solid #f2289b;
-}
-
-.accent-teal {
-    color: #00b2bd;
-}
-
-.accent-pink {
-    color: #f2289b;
 }
 
 .input-table {
