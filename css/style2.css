@@ -92,7 +92,7 @@ body {
 }
 .body-dark,
 .body-dark .modal {
-  background: #1f2124;
+  background: #272c36;
   color: #cacaca;
 }
 h1 {
@@ -152,7 +152,7 @@ hr {
   border-top: 1px solid #ffffff;
 }
 .body-dark hr {
-  border-top: 1px solid #373a3f;
+  border-top: 1px solid #3c4454;
 }
 /* Links and Buttons */
 a {
@@ -236,7 +236,7 @@ a.button {
   color: #cacaca;
 }
 .body-dark .button {
-  background: #303337;
+  background: #363d4b;
   color: #cacaca;
 }
 .body-dark .button:hover {
@@ -244,7 +244,7 @@ a.button {
   color: #cacaca;
 }
 .body-dark .slider::-webkit-slider-thumb {
-  background: #303337;
+  background: #363d4b;
   color: #cacaca;
 }
 .body-dark .slider::-webkit-slider-thumb:hover {
@@ -254,7 +254,7 @@ a.button {
 .body-dark .slider::-moz-range-thumb {
   border: none;
   outline: none;
-  background: #303337;
+  background: #363d4b;
   color: #cacaca;
 }
 .body-dark .slider::-moz-range-thumb:hover {
@@ -264,7 +264,9 @@ a.button {
 a.button-rect {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  padding: 7px 12px;
+  padding: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
   border-radius: 5px;
 }
 a.button-circle-large {
@@ -315,7 +317,7 @@ a.button-circle-small .fa {
 /* Navbar */
 .navbar-container {
   width: 100%;
-  background: #242629;
+  background: #2b313c;
   color: #cacaca;
 }
 .navbar-title {
@@ -365,7 +367,7 @@ nav a:hover {
   border-top: 1px solid #e0e0e0;
 }
 .footer-container-dark {
-  border-top: 1px solid #242629;
+  border-top: 1px solid #2b313c;
 }
 /* UI Components */
 .text-view {
@@ -378,7 +380,7 @@ nav a:hover {
   color: #383838;
 }
 .body-dark .text-view {
-  background: #242629;
+  background: #2b313c;
   color: #cacaca;
 }
 textarea,
@@ -431,7 +433,7 @@ input[type="number"]:focus {
 .body-dark input[type="text"],
 .body-dark input[type="password"],
 .body-dark input[type="number"] {
-  background: #242629;
+  background: #2b313c;
   color: #cacaca;
 }
 .text-input-error {
@@ -552,7 +554,7 @@ input[type="range"],
 }
 .body-dark .slider,
 .body-dark .progress-bar-track {
-  background: #242629;
+  background: #2b313c;
 }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-transition: all 220ms ease 80ms;
@@ -567,7 +569,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
   margin-top: 2px;
   border-radius: 10px;
-  background: #303337;
+  background: #363d4b;
 }
 .body-light input[type="range"]::-webkit-slider-thumb {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33), inset 0 1px 1px rgba(255, 255, 255, 0.2);
@@ -592,7 +594,7 @@ input[type="range"]::-moz-range-thumb {
   height: 20px;
   margin-top: 2px;
   border-radius: 10px;
-  background: #303337;
+  background: #363d4b;
 }
 .body-light input[type="range"]::-moz-range-thumb {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33), inset 0 1px 1px rgba(255, 255, 255, 0.2);
@@ -651,7 +653,7 @@ input[type="range"]::-moz-range-thumb {
   background: #e4e4e4;
 }
 .body-dark .modal-header {
-  background: #303337;
+  background: #363d4b;
 }
 .modal-title {
   display: inline-block;
@@ -670,7 +672,7 @@ input[type="range"]::-moz-range-thumb {
   padding: 0 7.5px;
   float: right;
   border-radius: 0px 5px 0px 0px;
-  background: #242629;
+  background: #2b313c;
   color: #d6352b;
   line-height: 3.0em;
   text-decoration: none;
