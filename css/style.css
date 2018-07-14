@@ -60,7 +60,7 @@ main {
 }
 /* Fonts */
 body {
-  font: 16px "Barlow", sans-serif;
+  font: 16px "Rubik", "Barlow", sans-serif;
   letter-spacing: 0.3px;
 }
 h1,
@@ -70,7 +70,7 @@ h4,
 h5,
 h6,
 .modal-title {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 code,
 pre {
@@ -96,35 +96,31 @@ body {
   color: #cacaca;
 }
 h1 {
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 4px 0 8px;
 }
 .h1-light {
-  font-size: 2em;
-  font-weight: 200;
+  font-weight: 100;
 }
 h2 {
-  font-size: 1.7em;
+  font-size: 34px;
   font-weight: 300;
+  line-height: 1.2em;
+  margin: 4px 0 8px;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 24px;
   font-weight: 300;
+  line-height: 1.2em;
+  margin: 4px 0 8px;
 }
 h4 {
-  margin: 10px 0;
-  font-size: 1.15em;
+  font-size: 20px;
   font-weight: 300;
-}
-h5 {
-  margin: 10px 0;
-  font-size: 1.05em;
-  font-weight: 300;
-}
-h6 {
-  margin: 10px 0;
-  font-size: 1em;
-  font-weight: 300;
+  line-height: 1.2em;
+  margin: 4px 0 8px;
 }
 .small {
   font-size: 0.8em;
@@ -158,7 +154,6 @@ hr {
 a {
   display: inline-block;
   color: #1099a1;
-  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: all 220ms ease 80ms;
