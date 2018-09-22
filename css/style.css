@@ -60,7 +60,8 @@ main {
 }
 /* Fonts */
 body {
-  font: 16px "Rubik", sans-serif;
+  font: 16px "Roboto", sans-serif;
+  letter-spacing: 0.25px;
 }
 h1,
 h2,
