@@ -1,0 +1,260 @@
+@import "variables.less";
+
+// Fonts
+
+body {
+  font: 16px "Roboto", sans-serif;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+h1, h2, h3, h4, h5, h6, .modal-title {
+  font-family: "Barlow", sans-serif;
+}
+
+code, pre {
+  font-family: "Fira Code", monospace;
+}
+
+// Content styles
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.indented {
+  margin-left: 2rem;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+::-moz-selection {
+  background-color: fade(@accent-color, 30%);
+}
+
+::selection {
+  background-color: fade(@accent-color, 30%);
+}
+
+a {
+  .transition();
+  cursor: pointer;
+  color: @accent-color;
+  text-decoration: none;
+
+  &:hover, &:active {
+    color: @accent-color-lighter;
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  margin: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+
+  .body-light & {
+    border-top: 1px solid lighten(@light-background, 10%);
+  }
+
+  .body-dark & {
+    border-top: 1px solid lighten(@dark-background, 10%);
+  }
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// Main Layout
+
+.wrapper {
+  width: 42rem;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.main aside {
+  padding: 0px 5% 10px;
+}
+
+.body-light {
+  background: @light-background;
+  color: @light-foreground;
+}
+
+.body-dark {
+  background: @dark-background;
+  color: @dark-foreground;
+}
+
+// Footer
+
+.footer-container {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.footer-container-light {
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-container-dark {
+  border-top: 1px solid @dark-shade-1;
+}
+
+@media only screen and (min-width: 480px) {
+
+  .main article.right {
+    width: 100%;
+    float: left;
+  }
+
+  .main aside.right {
+    width: 90%;
+    float: none;
+  }
+
+  .main article.left {
+    width: 100%;
+    float: left;
+  }
+
+  .main aside.left {
+    width: 90%;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  .main aside {
+    padding: 5px;
+  }
+
+  .main article.right {
+    width: 57%;
+    float: right;
+  }
+
+  .main aside.right {
+    width: 38%;
+    float: right;
+  }
+
+  .main article.left {
+    width: 57%;
+    float: left;
+  }
+
+  .main aside.left {
+    width: 38%;
+    float: left;
+  }
+}
