@@ -3,14 +3,10 @@
 .inset() {
 
   .body-light & {
-    -webkit-box-shadow: 0 1px 1px rgba(255,255,255,.35), inset 0 1px 2px rgba(0,0,0,.15);
-    -moz-box-shadow: 0 1px 1px rgba(255,255,255,.35), inset 0 1px 2px rgba(0,0,0,.15);
     box-shadow: 0 1px 1px rgba(255,255,255,.35), inset 0 1px 2px rgba(0,0,0,.15);
   }
 
   .body-dark & {
-    -webkit-box-shadow: 0 1px 1px rgba(255,255,255,.13), inset 0 1px 2px rgba(0,0,0,.4);
-    -moz-box-shadow: 0 1px 1px rgba(255,255,255,.13), inset 0 1px 2px rgba(0,0,0,.4);
     box-shadow: 0 1px 1px rgba(255,255,255,.13), inset 0 1px 2px rgba(0,0,0,.4);
   }
 }
@@ -18,14 +14,10 @@
 .outset() {
 
   .body-light & {
-    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.33), inset 0 1px 1px rgba(255,255,255,.2);
-    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.33), inset 0 1px 1px rgba(255,255,255,.2);
     box-shadow: 0 1px 4px rgba(0,0,0,.33), inset 0 1px 1px rgba(255,255,255,.2);
   }
 
   .body-dark & {
-    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.33), inset 0 1px 1px rgba(255,255,255,.13);
-    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.33), inset 0 1px 1px rgba(255,255,255,.13);
     box-shadow: 0 1px 4px rgba(0,0,0,.33), inset 0 1px 1px rgba(255,255,255,.13);
   }
 }
@@ -63,8 +55,6 @@
 .thumb() {
   -moz-appearance:none !important;
   -webkit-appearance:none !important;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   width: 20px;
   height: 20px;
   margin-top: 2px;
@@ -92,8 +82,6 @@
 }
 
 .button-rect {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   padding: 7px 12px;
   border-radius: 5px;
 }
@@ -103,8 +91,6 @@
 }
 
 .text-view {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 
   .body-light & {
@@ -119,8 +105,6 @@
 }
 
 textarea, input[type="text"], input[type="password"], input[type="number"] {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   margin: 5px 0;
   padding: 8px;
   border: none;
@@ -146,12 +130,10 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .text-input-error {
-  border: 1px solid #ff2e10 !important;
+  border: 1px solid @negative-color !important;
 }
 
 .select-container {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   display: inline-block;
   position: relative;
   height: 26px;
@@ -179,9 +161,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   }
 
   &::after {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     position: absolute;
     top: 2px;
     right: 3px;
@@ -255,17 +234,12 @@ input[type="range"] {
   }
 
   .slider-container-vertical & {
-    -webkit-transform: translate(-50%, 0) rotate(90deg) translate(50%, 0);
-    -webkit-box-shadow: 1px 0px 1px rgba(255,255,255,.08), inset 1px 0px 2px rgba(0,0,0,.35);
-    -moz-box-shadow: 1px 0px 1px rgba(255,255,255,.08), inset 1px 0px 2px rgba(0,0,0,.35);
     margin: 0 5px;
     box-shadow: 1px 0px 1px rgba(255,255,255,.08), inset 1px 0px 2px rgba(0,0,0,.35);
   }
 }
 
 input[type="range"], .progress-bar-track {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   height: 8px;
   margin: 5px 0;
   border-radius: 4px;
@@ -286,8 +260,6 @@ input[type="range"], .progress-bar-track {
 }
 
 .progress-bar {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   height: 7px;
   border-radius: 4px;
   background: @accent-color;
@@ -304,10 +276,6 @@ input[type="range"], .progress-bar-track {
 }
 
 .modal {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.33);
-  -moz-box-shadow: 0 1px 8px rgba(0,0,0,.33);
   position: relative;
   margin: auto;
   border-radius: 5px;
@@ -325,8 +293,6 @@ input[type="range"], .progress-bar-track {
 }
 
 .modal-header {
-  -moz-border-radius: 5px 5px 0px 0px;
-  -webkit-border-radius: 5px 5px 0px 0px;
   height: 3.0em;
   border-radius: 5px 5px 0px 0px;
   .outset();
@@ -351,8 +317,6 @@ input[type="range"], .progress-bar-track {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-border-radius: 0px 5px 0px 0px;
-  -moz-border-radius: 0px 5px 0px 0px;
   display: inline-block;
   height: 3.0em;
   padding: 0 7.5px;

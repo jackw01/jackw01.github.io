@@ -52,13 +52,18 @@ code, pre {
 body {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 main {
   flex: 1;
+
+  & *:first-child {
+    margin-top: 0;
+  }
+}
+
+footer {
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h2 {
@@ -131,8 +136,6 @@ p {
 
 img {
   max-width: 100%;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -176,10 +179,14 @@ textarea {
 .wrapper {
   width: 42rem;
   max-width: 90%;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.main aside {
+aside {
   padding: 0px 5% 10px;
 }
 
@@ -194,92 +201,82 @@ textarea {
 }
 
 // Custom styles
-.block {
-    padding: 0.7rem 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.4rem;
 
-    & h1:first-of-type, & h2:first-of-type, & h3:first-of-type, & h4:first-of-type {
-      font-weight: 300;
-      margin-top: 0;
-    }
+.block {
+  padding: 0.7rem 1.2rem;
+  line-height: 1.4rem;
+  margin-bottom: 2.0rem;
+
+  & h1:first-of-type, & h2:first-of-type, & h3:first-of-type, & h4:first-of-type {
+    font-weight: 300;
+    margin-top: 0;
+  }
 }
 
 .block-accent {
-    border-left: 3px solid @accent-color;
+  border-left: 3px solid @accent-color;
 }
 
 .block-accent-alt {
-    border-left: 3px solid @accent-color-alt;
+  border-left: 3px solid @accent-color-alt;
 }
 
 .accent-color {
-    color: @accent-color;
+  color: @accent-color;
 }
 
 .accent-color-alt {
-    color: @accent-color-alt;
+  color: @accent-color-alt;
 
-    a&:hover, a&:active {
-      color: @accent-color-alt-lighter;
-    }
+  a&:hover, a&:active {
+    color: @accent-color-alt-lighter;
+  }
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, spin(@accent-color-lighter, 6) 0%, spin(@accent-color-lighter, -6) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 // App page styles
 
 .screenshot-container {
-    overflow: auto;
-    white-space: nowrap;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .screenshot {
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    margin: 1rem;
+  border-radius: 6px;
+  margin: 1rem;
 }
 
 .hero {
-    max-width:100%;
-    max-height:100%;
-}
-
-// Footer
-
-.footer-container {
-  width: 100%;
-  padding: 1rem 0;
-  font-size: 0.85rem;
-}
-
-.footer-container-light {
-  border-top: 1px solid #e0e0e0;
-}
-
-.footer-container-dark {
-  border-top: 1px solid @dark-shade-1;
+  max-width:100%;
+  max-height:100%;
 }
 
 // Responsive
 
 @media only screen and (min-width: 480px) {
 
-  .main article.right {
+  article.right {
     width: 100%;
     float: left;
   }
 
-  .main aside.right {
+  aside.right {
     width: 90%;
     float: none;
   }
 
-  .main article.left {
+  article.left {
     width: 100%;
     float: left;
   }
 
-  .main aside.left {
+  aside.left {
     width: 90%;
     float: none;
   }
@@ -287,26 +284,26 @@ textarea {
 
 @media only screen and (min-width: 960px) {
 
-  .main aside {
+  aside {
     padding: 5px;
   }
 
-  .main article.right {
+  article.right {
     width: 57%;
     float: right;
   }
 
-  .main aside.right {
+  aside.right {
     width: 38%;
     float: right;
   }
 
-  .main article.left {
+  article.left {
     width: 57%;
     float: left;
   }
 
-  .main aside.left {
+  aside.left {
     width: 38%;
     float: left;
   }
