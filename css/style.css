@@ -41,6 +41,15 @@ pre {
 .float-right {
   float: right;
 }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center * {
+  max-width: 50%;
+  vertical-align: middle;
+}
 body {
   padding: 0;
   margin: 0;
@@ -136,6 +145,9 @@ hr {
 .body-dark hr {
   border-top: 1px solid #373a3f;
 }
+div + hr {
+  margin-top: 0;
+}
 audio,
 canvas,
 iframe,
@@ -174,7 +186,7 @@ aside {
 }
 .block {
   padding: 0.7rem 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   margin-bottom: 2.0rem;
 }
 .block h1:first-of-type,
@@ -188,23 +200,31 @@ aside {
   border-left: 3px solid #06a2ab;
 }
 .block-accent-alt {
-  border-left: 3px solid #e23281;
+  border-left: 3px solid #e2326f;
 }
 .accent-color {
   color: #06a2ab;
 }
 .accent-color-alt {
-  color: #e23281;
+  color: #e2326f;
 }
 a.accent-color-alt:hover,
 a.accent-color-alt:active {
-  color: #e65194;
+  color: #e65185;
 }
 .gradient-text {
   background-image: linear-gradient(90deg, #07afcd 0%, #07cdc4 100%);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+.fa-normal {
+  font-size: 30px;
+  margin: 0 8px;
+}
+.fas,
+.fab {
+  vertical-align: -25%;
 }
 .screenshot-container {
   overflow: auto;

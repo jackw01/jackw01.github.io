@@ -49,6 +49,17 @@ code, pre {
   float: right;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & * {
+    max-width: 50%;
+    vertical-align: middle;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -158,6 +169,10 @@ hr {
   .body-dark & {
     border-top: 1px solid lighten(@dark-background, 10%);
   }
+
+  div + & {
+    margin-top: 0;
+  }
 }
 
 audio, canvas, iframe, img, svg, video {
@@ -204,7 +219,7 @@ aside {
 
 .block {
   padding: 0.7rem 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   margin-bottom: 2.0rem;
 
   & h1:first-of-type, & h2:first-of-type, & h3:first-of-type, & h4:first-of-type {
@@ -238,6 +253,15 @@ aside {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.fa-normal {
+  font-size: 30px;
+  margin: 0 8px;
+}
+
+.fas, .fab {
+  vertical-align: -25%;
 }
 
 // App page styles
