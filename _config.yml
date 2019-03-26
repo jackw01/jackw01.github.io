@@ -1,0 +1,16 @@
+title: jackw01
+description: jackw01
+url: https://jackw01.github.io
+logo: logo.png
+social:
+  name: Jack W
+  links:
+    - https://github.com/jackw01
+    - https://keybase.io/jackw01
+name: jackw01.github.io
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+plugins:
+  - jekyll-seo-tag

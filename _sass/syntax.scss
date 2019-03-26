@@ -1,0 +1,266 @@
+@import "variables";
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight {
+
+  color: $body-text-color;
+
+  table td { padding: 5px; }
+  table pre { margin: 0; }
+  .c {
+    /* Comment */
+    color: $mono-4;
+  }
+  .err {
+    /* Error */
+    color: $hue-5;
+  }
+  .k {
+    /* Keyword */
+    color: $hue-3;
+  }
+  .l {
+    /* Literal */
+    color: $hue-4;
+  }
+  .n {
+    /* Name */
+    color: $mono-3;
+  }
+  .o {
+    /* Operator */
+    color: $mono-3;
+  }
+  .p {
+    /* Punctuation */
+    color: $mono-3;
+  }
+  .cm {
+    /* Comment.Multiline */
+    color: $mono-4;
+  }
+  .cp {
+    /* Comment.Preproc */
+    color: $mono-4;
+  }
+  .c1 {
+    /* Comment.Single */
+    color: $mono-4;
+  }
+  .cs {
+    /* Comment.Special */
+    color: $mono-4;
+  }
+  .gd {
+    /* Generic.Deleted */
+    color: $hue-5;
+  }
+  .ge {
+    /* Generic.Emph */
+    font-style: italic;
+  }
+  .gh {
+    /* Generic.Heading */
+    color: $hue-2;
+    font-weight: bold;
+  }
+  .gi {
+    /* Generic.Inserted */
+    color: $hue-4;
+  }
+  .gp {
+    /* Generic.Prompt */
+    color: $mono-4;
+    font-weight: bold;
+  }
+  .gs {
+    /* Generic.Strong */
+    font-weight: bold;
+  }
+  .gu {
+    /* Generic.Subheading */
+    color: $mono-4;
+    font-weight: bold;
+  }
+  .kc {
+    /* Keyword.Constant */
+    color: $hue-5;
+  }
+  .kd {
+    /* Keyword.Declaration */
+    color: $hue-3;
+  }
+  .kn {
+    /* Keyword.Namespace */
+    color: $hue-5;
+  }
+  .kp {
+    /* Keyword.Pseudo */
+    color: $mono-3;
+  }
+  .kr {
+    /* Keyword.Reserved */
+    color: $hue-1;
+  }
+  .kt {
+    /* Keyword.Type */
+    color: $hue-3;
+  }
+  .ld {
+    /* Literal.Date */
+    color: $hue-4;
+  }
+  .m {
+    /* Literal.Number */
+    color: $hue-7;
+  }
+  .s {
+    /* Literal.String */
+    color: $hue-4;
+  }
+  .na {
+    /* Name.Attribute */
+    color: $mono-3;
+  }
+  .nb {
+    /* Name.Builtin */
+    color: $hue-7;
+  }
+  .nc {
+    /* Name.Class */
+    color: $hue-7;
+  }
+  .no {
+    /* Name.Constant */
+    color: $hue-5;
+  }
+  .nd {
+    /* Name.Decorator */
+    color: $hue-2;
+  }
+  .ni {
+    /* Name.Entity */
+    color: $hue-2;
+  }
+  .ne {
+    /* Name.Exception */
+    color: $hue-5;
+  }
+  .nf {
+    /* Name.Function */
+    color: $hue-2;
+  }
+  .nl {
+    /* Name.Label */
+    color: $mono-3;
+  }
+  .nn {
+    /* Name.Namespace */
+    color: $hue-5;
+  }
+  .nx {
+    /* Name.Other */
+    color: $hue-6;
+  }
+  .py {
+    /* Name.Property */
+    color: $hue-6;
+  }
+  .nt {
+    /* Name.Tag */
+    color: $hue-5;
+  }
+  .nv {
+    /* Name.Variable */
+    color: $hue-5;
+  }
+  .ow {
+    /* Operator.Word */
+    color: $hue-3;
+  }
+  .w {
+    /* Text.Whitespace */
+    color: $mono-4;
+  }
+  .mf {
+    /* Literal.Number.Float */
+    color: $hue-7;
+  }
+  .mh {
+    /* Literal.Number.Hex */
+    color: $hue-7;
+  }
+  .mi {
+    /* Literal.Number.Integer */
+    color: $hue-7;
+  }
+  .mo {
+    /* Literal.Number.Oct */
+    color: $hue-7;
+  }
+  .sb {
+    /* Literal.String.Backtick */
+    color: $hue-4;
+  }
+  .sc {
+    /* Literal.String.Char */
+    color: $hue-4;
+  }
+  .sd {
+    /* Literal.String.Doc */
+    color: $hue-4;
+  }
+  .s2 {
+    /* Literal.String.Double */
+    color: $hue-4;
+  }
+  .se {
+    /* Literal.String.Escape */
+    color: $hue-4;
+  }
+  .sh {
+    /* Literal.String.Heredoc */
+    color: $hue-4;
+  }
+  .si {
+    /* Literal.String.Interpol */
+    color: $hue-4;
+  }
+  .sx {
+    /* Literal.String.Other */
+    color: $hue-4;
+  }
+  .sr {
+    /* Literal.String.Regex */
+    color: $hue-1;
+  }
+  .s1 {
+    /* Literal.String.Single */
+    color: $hue-4;
+  }
+  .ss {
+    /* Literal.String.Symbol */
+    color: $hue-4;
+  }
+  .bp {
+    /* Name.Builtin.Pseudo */
+    color: $mono-3;
+  }
+  .vc {
+    /* Name.Variable.Class */
+    color: $hue-6;
+  }
+  .vg {
+    /* Name.Variable.Global */
+    color: $mono-3;
+  }
+  .vi {
+    /* Name.Variable.Instance */
+    color: $mono-3;
+  }
+  .il {
+    /* Literal.Number.Integer.Long */
+    color: $hue-7;
+  }
+}
