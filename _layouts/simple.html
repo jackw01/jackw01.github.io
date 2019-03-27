@@ -20,6 +20,7 @@
   <body>
     <header class="page-nav-header">
       <nav>
+        <span class="float-left site-logo">J</span>
         <a href="{{ site.url }}">Home</a>
         <a href="{{ site.url }}/about">About</a>
       </nav>
@@ -29,8 +30,7 @@
       {{ content }}
       {% if page.footer %}
         <footer class="site-footer">
-          <a href="{{ site.url }}">{{ site.name }}</a> &nbsp;&nbsp;&nbsp; © 2019 
-          <a class="secondary" href="{{ site.github.owner_url }}">@{{ site.github.owner_name }}</a>
+          © 2019 <a class="secondary" href="{{ site.github.owner_url }}">@{{ site.github.owner_name }}</a>
         </footer>
       {% endif %}
     </main>
