@@ -22,10 +22,10 @@
 }
 
 @mixin transition {
-  -webkit-transition: all 220ms ease 80ms;
-  -moz-transition: all 220ms ease 80ms;
-  -o-transition: all 220ms ease 80ms;
-  transition: all 220ms ease 80ms;
+  -webkit-transition: all 200ms ease 50ms;
+  -moz-transition: all 200ms ease 50ms;
+  -o-transition: all 200ms ease 50ms;
+  transition: all 200ms ease 50ms;
 }
 
 * {
@@ -202,7 +202,7 @@ a.secondary {
   nav {
     text-align: right;
 
-    .site-logo {
+    .site-logo a {
       -moz-user-select: none;
       -webkit-user-select: none;
       -ms-user-select: none;
@@ -220,6 +220,12 @@ a.secondary {
       font: 2.2rem "Roboto", sans-serif;
       font-style: italic;
       font-weight: 700;
+      border: none;
+      background: none;
+
+      &:hover {
+        border: none;
+      }
     }
 
     a {
@@ -241,7 +247,9 @@ a.secondary {
 }
 
 .header-stylized-text {
-  background-image: linear-gradient(135deg, #00a3d2 0%, #00ab9a 100%);
+  display: inline-block;
+  margin-bottom: 0 !important;
+  background-image: linear-gradient(90deg, #00a3d2 0%, #00ab9a 100%);
   color: transparent !important;
   -webkit-background-clip: text;
   background-clip: text;
@@ -422,12 +430,16 @@ nav {
   }
 
   hr {
-    height: 2px;
+    height: 1px;
     padding: 0;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     background-color: $border-color;
     border: 0;
   }
+}
+
+.content-wrapper-thin {
+  max-width: 54rem;
 }
 
 .site-footer {
@@ -435,6 +447,19 @@ nav {
   margin-top: 2rem;
   border-top: solid 1px $border-color;
   font-size: 0.85rem;
+}
+
+.homepage-block {
+  padding: 0.7rem 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 2.0rem;
+
+  & h1:first-of-type, & h2:first-of-type, & h3:first-of-type, & h4:first-of-type {
+    font-weight: 300;
+    margin-top: 0;
+  }
+
+  border-left: 3px solid $accent-color;
 }
 
 .float-left {

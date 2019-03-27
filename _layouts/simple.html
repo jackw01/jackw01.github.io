@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#1f2124">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head.html %}
   </head>
   <body>
-    <header class="page-nav-header">
-      <nav>
-        <span class="float-left site-logo">J</span>
-        <a href="{{ site.url }}">Home</a>
-        <a href="{{ site.url }}/about">About</a>
-      </nav>
-    </header>
+    {% include header-nav.html %}
     <main id="content" class="main-content" role="main">
       <h1 class="header-stylized-text">{{ page.title }}</h1>
       {{ content }}
