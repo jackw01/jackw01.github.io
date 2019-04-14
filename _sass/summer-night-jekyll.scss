@@ -146,12 +146,12 @@ a.secondary {
   -webkit-background-clip: text;
   background-clip: text;
   background-position: 0px 0px;
-  background-size: 200%;
+  background-size: 250%;
 
   &:hover {
     text-decoration: none;
     color: transparent;
-    background-position: -100% 0px;
+    background-position: -70% 0px;
   }
 
   + .button {
