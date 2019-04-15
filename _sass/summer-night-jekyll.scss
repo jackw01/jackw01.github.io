@@ -281,12 +281,12 @@ nav {
 
   @include large {
     max-width: 64rem;
-    padding: 1rem 6rem;
+    padding: 1rem 3rem;
     margin: 0 auto;
   }
 
   @include medium {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
   }
 
   @include small {
@@ -462,16 +462,11 @@ nav {
   border-left: 3px solid $accent-color;
 }
 
-.homepage-wrapper {
-  @include large {
-    max-width: 78rem;
-  }
-}
-
 .homepage-grid {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .homepage-card-container {
@@ -496,14 +491,39 @@ nav {
 
 .homepage-card {
   box-shadow: 0 1px 8px darken($body-background-color, 3%);
+  color: $body-text-color;
+  background-color: lighten($body-background-color, 3%);
+  display: block;
 
-  & div.homepage-card-text {
-    padding: 0 0.5rem 0.5rem;
+  div.homepage-card-heading {
+    @include transition();
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0.4rem 0 0.7rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $body-text-color;
+    box-shadow: 0 1px 20px darken($body-background-color, 6%);
+    div.homepage-card-heading {
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+
+  div.homepage-card-text {
+    padding: 0 1rem 1rem;
     margin: 0;
   }
 
-  & img {
+  img {
     border-radius: 0px;
+    margin: 0;
+    border-bottom: 1px solid $accent-color;
   }
 }
 
@@ -513,4 +533,9 @@ nav {
 
 .float-right {
   float: right;
+}
+
+.wrapper-thin {
+  max-width: 48rem;
+  margin: 0 auto;
 }

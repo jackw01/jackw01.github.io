@@ -1,5 +1,5 @@
-$large-breakpoint: 900px !default;
-$medium-breakpoint: 640px !default;
+$large-breakpoint: 880px !default;
+$medium-breakpoint: 680px !default;
 
 $heading-color: #e2e8f5 !default;
 $body-text-color: #c4c9d6 !default;
@@ -7,11 +7,7 @@ $highlight-text-color: #ffffff !default;
 $body-background-color: #1f2124 !default;
 $accent-color: #06a2ab !default;
 $accent-color-secondary: #ed387e !default;
-
-$code-bg-color: #21262f !default;
-$code-text-color: #a6abb8 !default;
-
-$border-color: #525762 !default;
+$border-color: lighten($body-background-color, 10%) !default;
 
 $mono-1: #e2e8f5 !default;
 $mono-2: #c4c9d6 !default;
@@ -29,3 +25,6 @@ $hue-4: #d3ab58 !default;
 $hue-8: #00ab9a !default;
 $hue-2: #00a9b9 !default;
 $hue-1: #00a3d2 !default;
+
+$code-bg-color: #21262f !default;
+$code-text-color: #a6abb8 !default;
