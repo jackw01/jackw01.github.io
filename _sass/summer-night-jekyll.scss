@@ -494,6 +494,29 @@ nav {
   }
 }
 
+.homepage-card-container-wide {
+  flex: 1;
+  padding: 0.5rem;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.wide-card-image {
+  object-fit: cover;
+  width: 100%;
+
+  @include large {
+    height: 20vh;
+  }
+
+  @include medium {
+    height: 20vh;
+  }
+
+  @include small {
+  }
+}
+
 .homepage-card {
   box-shadow: 0 1px 8px darken($body-background-color, 3%);
   color: $body-text-color;
@@ -524,6 +547,12 @@ nav {
     height: 8.5rem;
     border-top: 1px solid $accent-color;
     padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  div.homepage-card-text-shrink {
+    border-top: 1px solid $accent-color;
+    padding: 0 1rem 0.2rem;
     margin: 0;
   }
 
