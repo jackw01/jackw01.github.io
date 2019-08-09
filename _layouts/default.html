@@ -25,7 +25,7 @@
         </nav>
       {% endif %}
     </header>
-    <main id="content" class="main-content" role="main">
+    <main id="content" class="main-content {{ site.containerClass | default: 'content-wrapper-thin' }}" role="main">
       {{ content }}
       <footer class="site-footer">
         {% if site.github.is_project_page %}
