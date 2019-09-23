@@ -571,27 +571,3 @@ nav {
   max-width: 50rem;
   margin: 0 auto;
 }
-
-@keyframes jiggle {
-  10%,
-  90% {
-    transform: translate3d(-1px, -3px, 0px);
-  }
-  20%,
-  80% {
-    transform: translate3d(1px, 1px, 20px);
-  }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-3px, 1px, 0px);
-  }
-  40%,
-  60% {
-    transform: translate3d(1px, -1px, -20px);
-  }
-}
-
-.jiggle {
-  animation: jiggle 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite
-}
