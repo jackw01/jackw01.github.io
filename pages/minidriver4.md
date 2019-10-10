@@ -1,23 +1,26 @@
 ---
 layout: simple
 title: Minidriver 4
-description: Tiny 4mm Screwdriver Handle With Bit Storage
+description: Tiny 4mm screwdriver handle with bit storage
 image: ../assets/md4/01.jpg
 footer: true
 ---
 
-<a href="../assets/md4/MD4 STLs.zip" class="button">Download STL Files (zip)</a>
+<a href="../assets/md4/md4 STLs.zip" class="button">Download STL Files (zip)</a>
 <a href="../assets/md4/
-Minidriver 4 v130 Final 2019-07.f3d" class="button">Download Fusion 360 Archive</a>
-<a href="../assets/md4/
-Minidriver 4 v130 Final 2019-07.step" class="button">Download STEP File</a>
+Minidriver 4 v130 Final 2019-07-27.f3d" class="button">Download Fusion 360 Archive</a>
 
-![](../assets/md4/01.jpg)
+[Originally published on Thingiverse](https://www.thingiverse.com/thing:3794235)
 
-## Notes
+## Summary
+
+![](../assets/md4/09100021.jpg)
+
 Minidriver 4 is a small (80x33x10mm) 3D printable screwdriver handle for 4mm bits with internal storage for 7 bits. This design isn't as comfortable to use as a traditional round-handled driver, but it allows faster and more convenient access to the screwdriver bits than designs where the bits are stored loosely inside a hollow handle.
 
 Fusion 360 original design file included.
+
+![](../assets/md4/09100018.jpg)
 
 ## Printing
 Printing should be fairly straightforward. Use supports. I used eSUN black PETG for all parts.

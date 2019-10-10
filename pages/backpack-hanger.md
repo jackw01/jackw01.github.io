@@ -11,7 +11,7 @@ footer: true
 
 [Originally published on Thingiverse](https://www.thingiverse.com/thing:3869162)
 
-## Notes
+## Summary
 
 ![](../assets/hanger/09100043.jpg)
 

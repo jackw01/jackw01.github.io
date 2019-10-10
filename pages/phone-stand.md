@@ -17,7 +17,7 @@ footer: true
 
 Credit card sized, 2mm thick print-in-place folding phone stand. Design based on [this phone stand](https://www.thingiverse.com/thing:3157890). Clearance around parts is increased to 0.4mm to make the design more forgiving and easier to print. Edges are beveled for easier insertion into thin wallets.
 
-** Update 2019-10-10: Increased length/depth of pivots to help parts stay together. **
+**Update 2019-10-10: Increased length/depth of pivots to help parts stay together.**
 
 ## Printing
 Print at 0.2mm or 0.3mm layer height. If you use X/Y size compensation, turn it off for this. I used eSUN PLA+ with maximum cooling. If the pieces fuse together at the first layer, they can easily be cut apart with a knife.
