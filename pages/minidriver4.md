@@ -20,7 +20,7 @@ Minidriver 4 is a small (80x33x10mm) 3D printable screwdriver handle for 4mm bit
 Fusion 360 original design file included.
 
 ## Printing
-Printing should be fairly straightforwards. Use supports. I used eSUN black PETG for all parts.
+Printing should be fairly straightforward. Use supports. I used eSUN black PETG for all parts.
 
 ### Required Parts
 * 1/4in to 4mm bit adapter similar to [this one](https://www.amazon.com/Wiha-75802-Insert-System-Adaptor/dp/B00XIPRG4M/)
