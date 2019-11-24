@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: About Me
+title: About
 description: About jackw01.github.io
 image: assets/img/logo.png
 ---

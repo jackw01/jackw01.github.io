@@ -514,7 +514,7 @@ nav {
 }
 
 .homepage-card {
-  box-shadow: 0 1px 8px darken($body-background-color, 3%);
+  box-shadow: 0 1px 8px opacify(darken($body-background-color, 3%), 0.5);
   color: $body-text-color;
   background-color: lighten($body-background-color, 3%);
   display: block;
@@ -532,7 +532,7 @@ nav {
   &:hover {
     text-decoration: none;
     color: $body-text-color;
-    box-shadow: 0 1px 20px darken($body-background-color, 6%);
+    box-shadow: 0 1px 20px opacify(darken($body-background-color, 3%), 0.5);
     div.homepage-card-heading {
       color: $accent-color;
       text-decoration: none;

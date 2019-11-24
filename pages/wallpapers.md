@@ -3,6 +3,7 @@ layout: simple
 title: Wallpapers
 description:
 image: assets/img/logo.png
+footer: true
 ---
 
 All images created with [Blender](https://www.blender.org/).
@@ -12,9 +13,6 @@ All images created with [Blender](https://www.blender.org/).
 
 
 <hr>
-<small>
-© 2019 jackw01. 
-</small>
 
 <small>
 All work linked on this page is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). Free for personal, non-commercial use only. Do not share or redistribute without attribution.
