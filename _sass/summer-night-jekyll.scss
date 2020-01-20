@@ -230,26 +230,31 @@ a.secondary {
 
       &:hover {
         border: none;
+        text-decoration: none;
       }
     }
 
-    a {
-      background-image: linear-gradient(90deg, $body-text-color 0%, $body-text-color 50%, #00a3d2 50%, #00ab9a 100%);
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
+    a:not(.site-logo-link) {
+      //background-image: linear-gradient(90deg, $body-text-color 0%, $body-text-color 50%, #00a3d2 50%, #00ab9a 100%);
+      //color: transparent;
+      //-webkit-background-clip: text;
+      //background-clip: text;
+      color: $body-text-color;
       border-bottom: 1px solid transparent;
-      background-position: 0px 0px;
-      background-size: 200%;
+      //background-position: 0px 0px;
+      //background-size: 200%;
     }
 
-    a:hover {
+    a:not(.site-logo-link):hover {
       text-decoration: none;
       border-bottom: 1px solid $accent-color;
-      background-position: -100% 0px;
+      color: $accent-color;
+      //background-position: -100% 0px;
     }
   }
 }
+
+
 
 .header-stylized-text {
   display: inline-block;
