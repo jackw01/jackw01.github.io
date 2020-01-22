@@ -49,9 +49,9 @@ All screws used are M3 socket cap.
 * 2x M3 nuts
 
 ## Printing and Assembly Notes
-I used eSUN ABS+ filament. A material stronger than PLA and 100% infill are strongly recommended. 
+I used eSUN ABS+ filament. A material stronger than PLA and 100% infill are strongly recommended.
 
-The filament path should be cleaned out with a 2.5mm (3/32in) drill bit. Since BSPP taps are hard to find in the US, I did not tap the hole and screwed the fitting directly into the 3D printed part, which works surprisingly well. 
+The filament path should be cleaned out with a 2.5mm (3/32in) drill bit. Since BSPP taps are hard to find in the US, I did not tap the hole and screwed the fitting directly into the 3D printed part, which works surprisingly well.
 
 The bearing pin is intended to fit tightly into the bearing - first put the bearing into the idler arm and then press the pin into the bearing using pliers, a vise, or an actual press. The pin is intentionally not very tight fitting into the arm.
 

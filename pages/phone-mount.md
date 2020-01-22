@@ -1,7 +1,7 @@
 ---
 layout: simple
-title: Cam Locking Phone Tripod Mount 
-description: 3D printable cam locking phone tripod mount 
+title: Cam Locking Phone Tripod Mount
+description: 3D printable cam locking phone tripod mount
 image: ../assets/phonemount/03290023.jpg
 footer: true
 ---
@@ -15,12 +15,12 @@ footer: true
 
 ![](../assets/phonemount/03290023.jpg)
 
-I designed this in an attempt to improve on existing phone tripod mount designs that use either a screw or spring tension to clamp the phone in place. This mount uses an eccentric cam lock mechanism that allows it to be quickly released and locked in place with the flip of a lever. It grips the phone more securely than a spring-loaded mount and the phone can be inserted and removed much faster than with a screw clamping mount. 
+I designed this in an attempt to improve on existing phone tripod mount designs that use either a screw or spring tension to clamp the phone in place. This mount uses an eccentric cam lock mechanism that allows it to be quickly released and locked in place with the flip of a lever. It grips the phone more securely than a spring-loaded mount and the phone can be inserted and removed much faster than with a screw clamping mount.
 
 ![](../assets/phonemount/Phone Clamp Drawing-01.png)
 
 ## Assembly
-Required parts: 
+Required parts:
 * 1x M3x20mm screw
 * 1x M3x16mm screw
 * 2x M3 hex nut
