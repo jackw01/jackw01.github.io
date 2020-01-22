@@ -650,6 +650,46 @@ ul.nav-links {
   }
 }
 
+$inverse-text-color: #1f2124;
+$inverse-background-color: #f8f8f8;
+
+.homepage-subcontainer-light {
+  width: 100%;
+  color: $inverse-text-color;
+  background: $inverse-background-color;
+  box-shadow: inset 0 16px 16px -16px opacify(darken($body-background-color, 3%), 0.8);
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $inverse-text-color;
+  }
+
+  .homepage-card {
+    box-shadow: 0 1px 8px opacify(darken($inverse-background-color, 20%), 0.5);
+    color: $inverse-text-color;
+    background-color: lighten($inverse-background-color, 3%);
+
+    &:hover {
+      box-shadow: 0 1px 20px opacify(darken($inverse-background-color, 20%), 0.5);
+      color: $inverse-text-color;
+    }
+  }
+
+  hr {
+    background-color: darken($inverse-background-color, 20%);
+  }
+
+  .site-footer {
+    border-top: none;
+  }
+}
+
 // Section: Project pages
 
 .project-tagline {
