@@ -23,13 +23,14 @@ footer: true
   }
 </style>
 
-### A full-featured open source system monitoring app for macOS.
+#### A full-featured open source system monitoring app for macOS.
 
 <br>
 <div align="center">
   <img class="hero" src="../assets/img/micromonitor/mm0.png"/>
   <hr>
-  <a class="button button-rect" href="https://github.com/jackw01/MicroMonitor/releases/download/v1.0/MicroMonitor.v1.0.zip" style="margin-bottom:10px">Download</a>
+  <a class="button" href="https://github.com/jackw01/MicroMonitor/releases/download/v1.0/MicroMonitor.v1.0.zip" style="margin-bottom:10px">Download</a>
+  <a class="button" href="https://github.com/jackw01/MicroMonitor" style="margin-bottom:10px">View on Github</a>
   <div class="small">
     Version 1.0 for macOS 10.10+.
   </div>
@@ -47,7 +48,7 @@ footer: true
 * Lightweight app with low CPU and memory usage
 * Works on every Intel Mac with macOS 10.10 or newer
 
-Note: MicroMonitor is not under active development and is unlikely to be updated in the future unless updates are necessary to ensure compatibility with new versions of macOS.
+Note: MicroMonitor is not under active development and is unlikely to be updated in the future.
 
 ---
 
