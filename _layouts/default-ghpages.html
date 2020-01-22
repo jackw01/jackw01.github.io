@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     {% include head.html %}
-    {% if page.hide_first_h1 %}
+    {% if site.hide_first_h1 %}
     <style>
       #md-content>h1:first-child {
         display: none;
@@ -17,27 +17,27 @@
   <body>
     {% include header-nav.html %}
     <main id="content" class="main-content content-wrapper-thin" role="main">
-      <h1 class="header-stylized-text">{{ page.title | default: page.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: page.github.project_tagline }}</h2>
-      {% if page.nav_items %}
+      <h1 class="header-stylized-text">{{ site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      {% if site.nav_items %}
       <ul class="nav">
-        {% for link in page.nav_items %}
+        {% for link in site.nav_items %}
         <li><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
-      {% if page.github.is_project_page %}
-      <a href="{{ page.github.repository_url }}" class="button">View on GitHub</a>
+      {% if site.github.is_project_page %}
+      <a href="{{ site.github.repository_url }}" class="button">View on GitHub</a>
       {% endif %}
-      {% if page.npm_url %}
-      <a href="{{ page.npm_url }}" class="button">View on npm</a>
+      {% if site.npm_url %}
+      <a href="{{ site.npm_url }}" class="button">View on npm</a>
       {% endif %}
-      {% if page.show_downloads %}
-      <a href="{{ page.github.zip_url }}" class="button">Download .zip</a>
-      <a href="{{ page.github.tar_url }}" class="button">Download .tar.gz</a>
+      {% if site.show_downloads %}
+      <a href="{{ site.github.zip_url }}" class="button">Download .zip</a>
+      <a href="{{ site.github.tar_url }}" class="button">Download .tar.gz</a>
       {% endif %}
-      {% if page.custom_buttons %}
-      {% for link in page.custom_buttons %}
+      {% if site.custom_buttons %}
+      {% for link in site.custom_buttons %}
       <a href="{{ link.url }}" class="button">{{ link.text }}</a>
       {% endfor %}
       {% endif %}
