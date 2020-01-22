@@ -237,7 +237,7 @@ a.secondary {
 .site-logo a {
   font: 1.6rem "Roboto", sans-serif;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -274,60 +274,60 @@ a.secondary {
   @include small {
     padding: 2rem 1rem;
   }
+}
 
-  ul.nav-links {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    list-style-type: none;
-    padding: 0;
+ul.nav-links {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 1rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include large {
+    li:not(:last-child) {
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  @include medium {
+    li:not(:last-child) {
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  @include small {
+    list-style-type: disc;
+    padding-left: 1rem;
 
     li {
-      display: inline-block;
-      margin: 0;
-      padding: 0 1rem;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0.5rem;
     }
 
-    @include large {
-      li:not(:last-child) {
-        border-right: 1px solid $border-color;
-      }
+    li:not(:last-child) {
+      padding-bottom: 0.5rem;
+      border-bottom: 0;
     }
+  }
 
-    @include medium {
-      li:not(:last-child) {
-        border-right: 1px solid $border-color;
-      }
-    }
-
-    @include small {
-      list-style-type: disc;
-      padding-left: 1rem;
-
-      li {
-        display: block;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0.5rem;
-      }
-
-      li:not(:last-child) {
-        padding-bottom: 0.5rem;
-        border-bottom: 0;
-      }
-    }
-
-    a {
-      text-align: center;
-      text-decoration: none;
-    }
+  a {
+    text-align: center;
+    text-decoration: none;
   }
 }
 
@@ -342,6 +342,10 @@ a.secondary {
 
 // Section: text content / markdown
 
+.content-wrapper-big {
+  max-width: 64rem;
+}
+
 .content-wrapper-thin {
   max-width: 50rem;
   margin: 0 auto;
@@ -349,15 +353,14 @@ a.secondary {
 
 .main-content {
   word-wrap: break-word;
+  margin: 0 auto;
 
   :first-child {
     margin-top: 0;
   }
 
   @include large {
-    max-width: 64rem;
     padding: 1rem 3rem;
-    margin: 0 auto;
   }
 
   @include medium {
@@ -526,6 +529,16 @@ a.secondary {
   }
 }
 
+// Section: misc
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 // Section: homepage only
 
 .homepage-block {
@@ -637,12 +650,23 @@ a.secondary {
   }
 }
 
-// Section: misc
+// Section: Project pages
 
-.float-left {
-  float: left;
-}
+.project-tagline {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  opacity: 0.7;
 
-.float-right {
-  float: right;
+  @include large {
+    font-size: 1.25rem;
+  }
+
+  @include medium {
+    font-size: 1.15rem;
+  }
+
+  @include small {
+    font-size: 1rem;
+  }
 }
