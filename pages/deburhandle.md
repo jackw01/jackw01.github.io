@@ -20,9 +20,8 @@ To use, insert a 0.125" shank deburring blade into the end of the handle until t
 Depending on your printer and the material you use for the clip, the blade will probably not spin freely but will rotate well enough for normal use (deburring holes). Friction can be reduced by enlarging the center hole on the clip or adding some grease in that area.
 
 ## Printing
-Print on its flat side in any material. The proper orientation is shown below. Depending on how well your printer is tuned, you may or may not need supports to print the hole properly. If you use supports, you will probably need to drill out the hole to remove them. I used eSUN black PETG for the handle and orange PLA for the clip.
+Print on its flat side in any material. Depending on how well your printer is tuned, you may or may not need supports to print the hole properly. If you use supports, you will probably need to drill out the hole to remove them. I used eSUN black PETG for the handle and orange PLA for the clip.
 
-![](../assets/deburhandle/print.png)
 ![](../assets/deburhandle/clip.png)
 
 ### License

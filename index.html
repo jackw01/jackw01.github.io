@@ -1,7 +1,7 @@
 ---
 layout: blank
 description: jackw01.github.io
-image: assets/img/logo-small.png
+image: assets/img/logo.png
 ---
 
 <!DOCTYPE html>
@@ -9,18 +9,31 @@ image: assets/img/logo-small.png
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body class="homepage">
     <!--{% include header-nav.html %}-->
     <main id="content" class="main-content content-wrapper-big" role="main">
       <h1 class="header-stylized-text">Hi there.</h1>
-      <span class="float-right site-logo">
-        <a class="site-logo-link" href="{{ site.url }}">J<sup>01</sup></a>
-      </span>
+      <!--<span class="float-right site-logo">
+        <a class="site-logo-link" href="{{ site.url }}">J</a>
+      </span>-->
+      <br>
+      <h5 class="header-small-caps">I'm Jack Whittaker, a computer science and engineering student.</h5>
+      <br>
+      <h5 class="header-small-caps">I like to make things.</h5>
       <hr>
       <div class="homepage-grid">
         <div class="homepage-card-container">
           <a class="homepage-card" href="https://jackw01.github.io/glowstick/">
-            <img src="assets/img/glowstick-01-small.png"></img>
+            <img src="assets/img/corexy-01.png"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">SmallXY</div>
+              Compact and very fast CoreXY 3D printer with linear rails
+            </div>
+          </a>
+        </div>
+        <div class="homepage-card-container">
+          <a class="homepage-card" href="https://jackw01.github.io/glowstick/">
+            <img src="assets/img/glowstick-01.png"></img>
             <div class="homepage-card-text">
               <div class="homepage-card-heading">Glowstick</div>
               RGB/White LED tube light for photo, video, and light painting use
@@ -28,8 +41,17 @@ image: assets/img/logo-small.png
           </a>
         </div>
         <div class="homepage-card-container">
+          <a class="homepage-card" href="https://jackw01.github.io/modular-mounts/">
+            <img src="assets/img/modularmount-01.png"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">Modular Mounts</div>
+              3D printable GoPro-compatible mounting accessories for cameras, phones, and more
+            </div>
+          </a>
+        </div>
+        <div class="homepage-card-container">
           <a class="homepage-card" href="https://jackw01.github.io/testbot86/">
-            <img src="assets/img/testbot86-small.png"></img>
+            <img src="assets/img/testbot86.png"></img>
             <div class="homepage-card-text">
               <div class="homepage-card-heading">testbot86</div>
               86mm square mobile robot platform with a Raspbery Pi Zero
@@ -38,7 +60,7 @@ image: assets/img/logo-small.png
         </div>
         <div class="homepage-card-container">
           <a class="homepage-card" href="https://jackw01.github.io/led-control/">
-            <img src="assets/img/ledcontrol-small.png"></img>
+            <img src="assets/img/ledcontrol.png"></img>
             <div class="homepage-card-text">
               <div class="homepage-card-heading">LED Control</div>
               Advanced WS2812 LED controller with Python shader programming and web interface for Raspberry Pi
@@ -47,7 +69,7 @@ image: assets/img/logo-small.png
         </div>
         <div class="homepage-card-container">
           <a class="homepage-card" href="https://jackw01.github.io/liora">
-            <img src="assets/img/liora-small.png"></img>
+            <img src="assets/img/liora-01.png"></img>
             <div class="homepage-card-text">
               <div class="homepage-card-heading">Liora</div>
               Modular and extensible Node.js Discord bot with extensive built-in functionality and voice commands
@@ -55,8 +77,17 @@ image: assets/img/logo-small.png
           </a>
         </div>
         <div class="homepage-card-container">
+          <a class="homepage-card" href="https://jackw01.github.io/triangulator2-app/build/">
+            <img src="assets/img/triangulator2-2.png"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">triangulator2</div>
+              SVG triangle art generator webapp
+            </div>
+          </a>
+        </div>
+        <div class="homepage-card-container">
           <div class="homepage-card" href="#">
-            <img src="assets/img/summer-night-small.png"></img>
+            <img src="assets/img/summer-night.png"></img>
             <div class="homepage-card-text">
               <div class="homepage-card-heading">summer-night-theme</div>
               Clean and vibrant dark theme for <a
@@ -65,33 +96,6 @@ image: assets/img/logo-small.png
             </div>
           </div>
         </div>
-        <div class="homepage-card-container">
-          <a class="homepage-card" href="https://jackw01.github.io/triangulator2-app/build/">
-            <img src="assets/img/triangulator2-2-small.png"></img>
-            <div class="homepage-card-text">
-              <div class="homepage-card-heading">triangulator2</div>
-              SVG triangle art generator webapp
-            </div>
-          </a>
-        </div>
-        <!--<div class="homepage-card-container">
-          <a class="homepage-card" href="pages/gopro-mount">
-            <img src="assets/img/gopro-01-small.png"></img>
-            <div class="homepage-card-text">
-              <div class="homepage-card-heading">GoPro Mount Drawings</div>
-              Dimension drawings for making GoPro-compatible mounts
-            </div>
-          </a>
-        </div>-->
-        <!--<div class="homepage-card-container">
-          <a class="homepage-card" href="pages/cycloidal">
-            <img src="assets/img/cycloidal-01-small.png"></img>
-            <div class="homepage-card-text">
-              <div class="homepage-card-heading">Cycloidal Drive</div>
-              Parametric script-generated cycloidal gearing in Fusion 360
-            </div>
-          </a>
-        </div>-->
       </div>
       <hr>
       <div class="content-wrapper-thin">
@@ -121,24 +125,55 @@ image: assets/img/logo-small.png
         </div>-->
       </div>
       <hr>
-      <div class="content-wrapper-thin">
-        <div class="homepage-block">
-          <h4>Useful Information</h4>
-          <a href="pages/gopro-mount">Dimension drawings and CAD files</a> for making GoPro-compatible mounts<br>
-        </div>
-      </div>
-      <!--<hr>
       <h4>3D Printable Designs</h4>
       <div class="homepage-grid">
-      </div>-->
+        <div class="homepage-card-container">
+          <a class="homepage-card" href="pages/backpack-hanger">
+            <img src="assets/img/hanger-2.jpg"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">Backpack Hanger</div>
+              3D printable folding hanging hook for backpacks and more
+            </div>
+          </a>
+        </div>
+        <div class="homepage-card-container">
+          <a class="homepage-card" href="pages/phone-mount">
+            <img src="assets/img/phonemount.jpg"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">Phone Tripod Mount</div>
+              3D printable GoPro-compatible cam locking phone tripod mount
+            </div>
+          </a>
+        </div>
+        <div class="homepage-card-container">
+          <a class="homepage-card" href="pages/phone-stand">
+            <img src="assets/img/phonestand.jpg"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">Thin Phone Stand</div>
+              3D printable credit-card-sized folding phone stand
+            </div>
+          </a>
+        </div>
+        <div class="homepage-card-container">
+          <a class="homepage-card" href="pages/deburhandle">
+            <img src="assets/img/deburhandle.jpg"></img>
+            <div class="homepage-card-text">
+              <div class="homepage-card-heading">Deburring Tool Handle</div>
+              Fully 3D printed deburring tool handle for standard 0.125" blades
+            </div>
+          </a>
+        </div>
+      </div>
+      {% include footer.html %}
     </main>
+    <!--
     <div class="homepage-subcontainer-light">
       <main id="content" class="main-content content-wrapper-big" role="main">
         <h4>3D Printable Designs</h4>
         <div class="homepage-grid">
           <div class="homepage-card-container">
             <a class="homepage-card" href="pages/backpack-hanger">
-              <img src="assets/img/hanger-small-2.jpg"></img>
+              <img src="assets/img/hanger-2.jpg"></img>
               <div class="homepage-card-text">
                 <div class="homepage-card-heading">Backpack Hanger</div>
                 3D printable folding hanging hook for backpacks and more
@@ -147,7 +182,7 @@ image: assets/img/logo-small.png
           </div>
           <div class="homepage-card-container">
             <a class="homepage-card" href="pages/phone-mount">
-              <img src="assets/img/phonemount-small.jpg"></img>
+              <img src="assets/img/phonemount.jpg"></img>
               <div class="homepage-card-text">
                 <div class="homepage-card-heading">Phone Tripod Mount</div>
                 3D printable GoPro-compatible cam locking phone tripod mount
@@ -156,7 +191,7 @@ image: assets/img/logo-small.png
           </div>
           <div class="homepage-card-container">
             <a class="homepage-card" href="pages/phone-stand">
-              <img src="assets/img/phonestand-small.jpg"></img>
+              <img src="assets/img/phonestand.jpg"></img>
               <div class="homepage-card-text">
                 <div class="homepage-card-heading">Thin Phone Stand</div>
                 3D printable credit-card-sized folding phone stand
@@ -165,44 +200,12 @@ image: assets/img/logo-small.png
           </div>
           <div class="homepage-card-container">
             <a class="homepage-card" href="pages/deburhandle">
-              <img src="assets/img/deburhandle-small.jpg"></img>
+              <img src="assets/img/deburhandle.jpg"></img>
               <div class="homepage-card-text">
                 <div class="homepage-card-heading">Deburring Tool Handle</div>
                 Fully 3D printed deburring tool handle for standard 0.125" blades
               </div>
             </a>
-          </div>
-          <!--<div class="homepage-card-container">
-            <a class="homepage-card" href="pages/bowden-extruder">
-              <img src="assets/img/extruder-small.jpg"></img>
-              <div class="homepage-card-text">
-                <div class="homepage-card-heading">Bowden Extruder</div>
-                Compact and high strength Bowden extruder for 3D printers
-              </div>
-            </a>
-          </div>-->
-          <!--<div class="homepage-card-container">
-              <a class="homepage-card" href="pages/minidriver4">
-                <img src="assets/img/md4-small.jpg"></img>
-                <div class="homepage-card-text">
-                  <div class="homepage-card-heading">Minidriver 4</div>
-                  Tiny 4mm screwdriver handle with bit storage
-                </div>
-              </a>
-            </div>-->
-        </div>
-        <br>
-        <div class="content-wrapper-thin">
-          <div class="homepage-block">
-            <h4>Customizable OpenSCAD Designs</h4>
-            <a href="https://www.thingiverse.com/thing:2868900">Customizable Cable Clip</a> For attaching cables or tubing
-            to
-            square or round objects<br>
-            <a href="https://www.thingiverse.com/thing:3610780">Customizable L Bracket</a> Versatile L bracket for just
-            about
-            anything<br>
-            <a href="https://www.thingiverse.com/thing:3694236">Customizable Shaft Collar</a> Basic screw clamping shaft
-            collar<br>
           </div>
         </div>
         <hr>
@@ -218,7 +221,7 @@ image: assets/img/logo-small.png
         </div>
         {% include footer.html %}
       </main>
-    </div>
+    </div>-->
   </body>
 </html>
 

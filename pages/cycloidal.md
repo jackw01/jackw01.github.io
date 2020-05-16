@@ -8,6 +8,6 @@ footer: true
 
 <a href="https://github.com/jackw01/fusion360-cycloidal-drive" class="button">View On Github</a>
 
-![](../assets/img/cycloidal-01-small.png)
+![](../assets/img/cycloidal-01.png)
 
 Coming soon

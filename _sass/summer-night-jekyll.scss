@@ -114,6 +114,11 @@ body {
   line-height: 22px;
   color: $body-text-color;
   background: $body-background-color;
+
+  &.homepage {
+    background-image: url("../img/stripes-01.png");
+    background-repeat: repeat;
+  }
 }
 
 a {
@@ -333,11 +338,19 @@ ul.nav-links {
 
 .header-stylized-text {
   display: inline-block;
-  margin-bottom: 0 !important;
+  margin-bottom: 0.2rem !important;
   background-image: linear-gradient(90deg, #00a3d2 0%, #00ab9a 100%);
   color: transparent !important;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.header-small-caps {
+  display: inline-block;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-variant: small-caps;
+  font-weight: 200;
 }
 
 // Section: text content / markdown
@@ -604,7 +617,7 @@ ul.nav-links {
   }
 
   .homepage-card {
-    box-shadow: 0 1px 8px opacify(darken($body-background-color, 3%), 0.5);
+    box-shadow: 0 1px 8px opacify(darken($body-background-color, 6%), 0.5);
     color: $body-text-color;
     background-color: lighten($body-background-color, 3%);
     display: block;
@@ -622,7 +635,7 @@ ul.nav-links {
     &:hover {
       text-decoration: none;
       color: $body-text-color;
-      box-shadow: 0 1px 20px opacify(darken($body-background-color, 3%), 0.5);
+      box-shadow: 0 1px 20px opacify(darken($body-background-color, 6%), 0.5);
       div.homepage-card-heading {
         color: $accent-color;
         text-decoration: none;
