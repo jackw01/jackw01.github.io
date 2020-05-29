@@ -1,0 +1,56 @@
+<!--
+    <div class="homepage-subcontainer-light">
+      <main id="content" class="main-content content-wrapper-big" role="main">
+        <h4>3D Printable Designs</h4>
+        <div class="homepage-grid">
+          <div class="homepage-card-container">
+            <a class="homepage-card" href="pages/backpack-hanger">
+              <img src="assets/img/hanger-2.jpg"></img>
+              <div class="homepage-card-text">
+                <div class="homepage-card-heading">Backpack Hanger</div>
+                3D printable folding hanging hook for backpacks and more
+              </div>
+            </a>
+          </div>
+          <div class="homepage-card-container">
+            <a class="homepage-card" href="pages/phone-mount">
+              <img src="assets/img/phonemount.jpg"></img>
+              <div class="homepage-card-text">
+                <div class="homepage-card-heading">Phone Tripod Mount</div>
+                3D printable GoPro-compatible cam locking phone tripod mount
+              </div>
+            </a>
+          </div>
+          <div class="homepage-card-container">
+            <a class="homepage-card" href="pages/phone-stand">
+              <img src="assets/img/phonestand.jpg"></img>
+              <div class="homepage-card-text">
+                <div class="homepage-card-heading">Thin Phone Stand</div>
+                3D printable credit-card-sized folding phone stand
+              </div>
+            </a>
+          </div>
+          <div class="homepage-card-container">
+            <a class="homepage-card" href="pages/deburhandle">
+              <img src="assets/img/deburhandle.jpg"></img>
+              <div class="homepage-card-text">
+                <div class="homepage-card-heading">Deburring Tool Handle</div>
+                Fully 3D printed deburring tool handle for standard 0.125" blades
+              </div>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <div class="homepage-grid">
+          <div class="homepage-card-container-wide">
+            <a class="homepage-card" href="pages/wallpapers">
+              <img src="assets/img/layer-A0103w.jpg" class="wide-card-image"></img>
+              <div class="homepage-card-text-shrink">
+                <div class="homepage-card-heading">Wallpapers and Art</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% include footer.html %}
+      </main>
+    </div>-->
