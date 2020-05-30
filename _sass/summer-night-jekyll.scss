@@ -111,7 +111,7 @@ video {
 body {
   padding: 0;
   margin: 0;
-  line-height: 24px;
+  line-height: 22px;
   color: $body-text-color;
   background: $body-background-color;
 
@@ -350,6 +350,7 @@ ul.nav-links {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   //text-transform: uppercase;
+  color: $mono-3 !important;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   font-weight: 200;
