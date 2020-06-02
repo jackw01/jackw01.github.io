@@ -116,8 +116,8 @@ body {
   background: $body-background-color;
 
   &.homepage {
-    background-image: url("../img/stripes-01.png");
-    background-repeat: repeat;
+    //background-image: url("../img/stripes-01.png");
+    //background-repeat: repeat;
   }
 }
 
@@ -662,6 +662,38 @@ ul.nav-links {
       display: block;
       border-radius: 0px;
       margin: 0;
+    }
+  }
+
+  .homepage-card-featured {
+    border: 1px solid $accent-color;
+
+    div.homepage-card-heading {
+      @include large {
+        text-align: left;
+      }
+      @include medium {
+        text-align: left;
+      }
+
+      &::after {
+        content: "[new]";
+        color: $mono-4;
+        font-variant: small-caps;
+        font-size: 1rem;
+        font-weight: 100;
+        position: relative;
+        bottom: 0.2rem;
+        padding-left: 0.7rem;
+      }
+    }
+
+    div.homepage-card-text {
+      height: auto;
+    }
+
+    img, video {
+      //border: 3px solid $body-background-color;
     }
   }
 }
