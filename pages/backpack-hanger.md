@@ -27,7 +27,7 @@ Fusion 360 original design file included.
 ## Printing
 Print with 100% infill. Supports are required for Hanger.stl only. PETG, nylon, or stronger materials are recommended. Carabiner_Door.stl needs to bend during assembly and use, so ABS or PLA may be too brittle (untested).
 
-### Parts and Assembly
+## Assembly
 Assemble the clip body and hanging hook as shown in the pictures and screw them together with an M5x18mm or M5x20mm screw and an M5 nut, preferably a Nylok nut. Insert the carabiner door into the clip body as shown in the pictures. The door will have to bend to snap into place, but it shouldn't break.
 
 ![](../assets/hanger/09100037.jpg)
