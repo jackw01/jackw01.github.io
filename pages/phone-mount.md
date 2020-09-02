@@ -6,10 +6,12 @@ image: ../assets/phonemount/03290023.jpg
 footer: true
 ---
 
-<a href="../assets/phonemount/phonemount STLs.zip" class="button">Download STL Files (zip)</a>
-<a href="../assets/phonemount/Gopro Profile Phone Mount v86.f3d" class="button">Download Fusion 360 Archive</a>
+## Update
+Please download the updated design [here](https://jackw01.github.io/modular-mounts/).
 
-[Originally published on Thingiverse](https://www.thingiverse.com/thing:3525449)
+Informatiopn about the old design is kept below for reference:
+
+<hr>
 
 ## Summary
 
