@@ -617,6 +617,10 @@ ul.nav-links {
       @include small {
       }
     }
+
+    div.homepage-card-text {
+      height: auto;
+    }
   }
 
   .homepage-card {
@@ -666,7 +670,7 @@ ul.nav-links {
   }
 
   .homepage-card-featured {
-    border: 1px solid $accent-color;
+    border: 1px solid darken($accent-color, 15%);
 
     div.homepage-card-heading {
       @include large {
@@ -678,7 +682,7 @@ ul.nav-links {
 
       &::after {
         content: "[new]";
-        color: $mono-4;
+        color: lighten($accent-color, 10%);
         font-variant: small-caps;
         font-size: 1rem;
         font-weight: 100;
@@ -686,10 +690,6 @@ ul.nav-links {
         bottom: 0.2rem;
         padding-left: 0.7rem;
       }
-    }
-
-    div.homepage-card-text {
-      height: auto;
     }
 
     img, video {
