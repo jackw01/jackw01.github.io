@@ -196,6 +196,9 @@ a.secondary {
   color: $heading-color;
   background: linear-gradient(90deg, $cool-gradient-1 0%, $cool-gradient-2 100%);
   width: 100%;
+  @include small {
+    padding: 0 0.5rem;
+  }
 
   h1,
   h2,
@@ -514,11 +517,15 @@ ul.nav-links {
 // Section: footer
 
 .site-footer {
-  padding: 1.6rem 0;
+  padding: 1.5rem 0;
   margin-top: 2rem;
   border-top: solid 1px $border-color;
   font-size: 0.9rem;
   font-weight: 400;
+  width: 100%;
+  @include small {
+    padding: 1.5rem 0.5rem;
+  }
 
   span.float-left {
     margin-right: 0.5rem;
