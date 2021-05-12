@@ -28,6 +28,18 @@
   transition: all 200ms ease 50ms;
 }
 
+@keyframes gradient {
+  0% {
+		background-position: 0% ;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 * {
   box-sizing: border-box;
 }
@@ -73,13 +85,13 @@ h4 {
 
 h5 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
 h6 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
@@ -194,11 +206,7 @@ a.secondary {
 
 .page-header, .page-nav-header {
   color: $heading-color;
-  background: linear-gradient(90deg, $cool-gradient-1 0%, $cool-gradient-2 100%);
   width: 100%;
-  @include small {
-    padding: 0 0.5rem;
-  }
 
   h1,
   h2,
@@ -209,11 +217,16 @@ a.secondary {
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
   }
+}
 
-  a:hover {
-    text-decoration: none;
-    border-bottom: 1px solid $accent-color;
-    color: $accent-color;
+.page-header {
+  background: linear-gradient(90deg, $cool-gradient-1 0%, $cool-gradient-2 100%);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  padding: 1rem 0;
+
+  @include small {
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -226,13 +239,6 @@ a.secondary {
     padding: 0;
     text-align: right;
 
-    .site-logo a {
-      font-size: 2.2rem;
-      margin-left: 3rem;
-      height: 3rem;
-      line-height: 3rem;
-    }
-
     a {
       color: $body-text-color;
       border-bottom: 1px solid transparent;
@@ -244,29 +250,32 @@ a.secondary {
       padding: 0 1rem;
       text-align: center;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid $accent-color;
+      }
+    }
+
+    a.site-logo{
+      background: linear-gradient(90deg, $cool-gradient-1 0%, $cool-gradient-2 100%);
+      background-size: 200% 200%;
+      animation: gradient 5s ease infinite;
+      margin-left: 1rem;
+      float: left;
+      height: 3rem;
+      line-height: 3rem;
+      font: 2.4rem "Barlow", sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
     }
 
     a:last-child {
-      margin-right: 3rem;
+      margin-right: 1rem;
     }
-  }
-}
-
-.site-logo a {
-  font: 1.6rem "Barlow", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  line-height: 4.5rem;
-  color: $accent-color-secondary;
-  border: none;
-  background: none;
-
-  &:hover {
-    border: none;
-    text-decoration: none;
   }
 }
 
@@ -325,7 +334,7 @@ ul.nav-links {
   }
 }
 
-.header-stylized-text {
+.gradient-text {
   display: block;
   background-image: linear-gradient(90deg, $cool-gradient-1 0%, $cool-gradient-2 100%);
   color: transparent !important;
@@ -518,7 +527,6 @@ ul.nav-links {
 
 .site-footer {
   padding: 1.5rem 0;
-  margin-top: 2rem;
   border-top: solid 1px $border-color;
   font-size: 0.9rem;
   font-weight: 400;
@@ -527,7 +535,7 @@ ul.nav-links {
     padding: 1.5rem 0.5rem;
   }
 
-  span.float-left {
+  span.float-left, a {
     margin-right: 0.5rem;
   }
 
@@ -593,7 +601,7 @@ ul.nav-links {
 
   .homepage-card-container {
     flex: 1;
-    padding: 0.5rem;
+    //padding: 0.5rem;
 
     @include large {
       flex-basis: 33.3%;
@@ -613,7 +621,7 @@ ul.nav-links {
 
   .homepage-card-container-wide {
     flex: 1;
-    padding: 0.5rem;
+    //padding: 0.5rem;
     flex-basis: 100%;
     max-width: 100%;
 
@@ -641,6 +649,7 @@ ul.nav-links {
   .homepage-card {
     color: $body-text-color;
     background-color: $body-background-color;
+    border: 1px solid $body-background-color;
     display: block;
 
     div.homepage-card-heading {
@@ -649,12 +658,13 @@ ul.nav-links {
       font-size: 26px;
       line-height: 30px;
       font-weight: 200;
-      margin: 0.7rem 0;
+      margin: 0.2rem 0 0.7rem;
     }
 
     &:hover {
       text-decoration: none;
       color: $body-text-color;
+      border: 1px solid $accent-color;
       div.homepage-card-heading {
         color: $accent-color;
         text-decoration: none;
@@ -663,10 +673,10 @@ ul.nav-links {
 
     div.homepage-card-text {
       @include large {
-        height: 8.5rem;
+        height: 6.3rem;
       }
       @include medium {
-        height: 8.5rem;
+        height: 6.3rem;
       }
       padding: 0 1rem 1rem;
       margin: 0;
@@ -680,15 +690,13 @@ ul.nav-links {
     img, video {
       display: block;
       border-radius: 0px;
+      border: 0.5rem solid $body-background-color;
       margin: 0;
     }
   }
 
   .homepage-card-featured {
-    //border: 1px solid $accent-color;
-
     div.homepage-card-heading {
-
       &::after {
         content: "[new]";
         color: $accent-color;
