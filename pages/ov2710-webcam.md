@@ -34,7 +34,7 @@ Required parts:
 * 1x 1/4-20 hex nut (optional)
 
 ## Printing
-Print in any material at 20% infill with 3 or more perimeters. Supports are required for `20c-p0211 camera enclosure front.stl` only. Apply thin neoprene foam tape to `20c-p0214 camera enclosure webcam stand 2.stl` as shown below to improve friction, if necessary. Insert a 1/4-20 hex nut into the nut pocket on the mount to attach the camera to a tripod.
+Print in any material at 20% infill with 3 or more perimeters. Supports are required for 20c-p0211 camera enclosure front.stl only. Apply thin neoprene foam tape to 20c-p0214 camera enclosure webcam stand 2.stl as shown below to improve friction, if necessary. Insert a 1/4-20 hex nut into the nut pocket on the mount to attach the camera to a tripod.
 
 ![](../assets/webcam/DSCF7121.jpg)
 

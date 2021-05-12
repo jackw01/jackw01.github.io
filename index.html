@@ -10,22 +10,23 @@ image: assets/img/logo.png
     {% include head.html %}
   </head>
   <body class="homepage">
-    <main id="content" class="main-content content-wrapper-big" role="main">
-      <h1 class="header-stylized-text">Hi there.</h1>
-      <!--<span class="float-right site-logo">
-        <a class="site-logo-link" href="{{ site.url }}">J</a>
-      </span>-->
-      <br>
-      <h6 class="header-small-caps">I'm jack whittaker, a computer science and engineering student.</h6>
-      <br>
-      <h6 class="header-small-caps">I like to make things.</h6>
-      <hr>
+    <header class="page-header">
+      <div class="main-content content-wrapper-thin">
+        <h1>hi</h1>
+        <!--<span class="float-right site-logo">
+                            <a class="site-logo-link" href="{{ site.url }}">J</a>
+                          </span>-->
+        <h6 class="header-small">i'm jack whittaker, a computer science and engineering student.</h6>
+        <h6 class="header-small">i like to make things.</h6>
+      </div>
+    </header>
+    <main id="content" class="main-content content-wrapper-wide" role="main">
       <div class="homepage-grid">
         <div class="homepage-card-container-wide">
           <a class="homepage-card homepage-card-featured" href="https://jackw01.github.io/smallXY/">
             <!--<img src="assets/img/corexy-01.png"></img>-->
             <img src="assets/img/smallxy.jpg"></img>
-            <div class="homepage-card-text">
+            <div class="homepage-card-text-shrink">
               <div class="homepage-card-heading">smallXY</div>
               Compact and very fast CoreXY 3D printer with linear rails
             </div>
@@ -35,7 +36,7 @@ image: assets/img/logo.png
           <a class="homepage-card homepage-card-featured" href="https://jackw01.github.io/led-control/">
             <img src="assets/img/ledcontrol.png"></img>
             <div class="homepage-card-text">
-              <div class="homepage-card-heading">LED Control</div>
+              <div class="homepage-card-heading">LED control</div>
               Advanced addressable LED controller with web interface for Raspberry Pi
             </div>
           </a>
@@ -44,7 +45,7 @@ image: assets/img/logo.png
           <a class="homepage-card homepage-card-featured" href="https://jackw01.github.io/glowstick/">
             <img src="assets/img/glowstick-01.png"></img>
             <div class="homepage-card-text">
-              <div class="homepage-card-heading">Glowstick</div>
+              <div class="homepage-card-heading">glowstick</div>
               RGB/White LED tube light for photo, video, and light painting use
             </div>
           </a>
@@ -53,7 +54,7 @@ image: assets/img/logo.png
           <a class="homepage-card" href="https://jackw01.github.io/modular-mounts/">
             <img src="assets/img/modularmount-01.png"></img>
             <div class="homepage-card-text">
-              <div class="homepage-card-heading">Modular Mounts</div>
+              <div class="homepage-card-heading">modular mounts</div>
               3D printable GoPro-compatible mounting accessories for cameras, phones, and more
             </div>
           </a>
@@ -63,7 +64,7 @@ image: assets/img/logo.png
             <img src="assets/img/testbot86.png"></img>
             <div class="homepage-card-text">
               <div class="homepage-card-heading">testbot86</div>
-              86mm square mobile robot platform with a Raspbery Pi Zero
+              86mm square mobile robot platform with a Raspberry Pi Zero
             </div>
           </a>
         </div>
@@ -71,8 +72,8 @@ image: assets/img/logo.png
           <a class="homepage-card" href="https://jackw01.github.io/liora">
             <img src="assets/img/liora-01.png"></img>
             <div class="homepage-card-text">
-              <div class="homepage-card-heading">Liora</div>
-              Modular and extensible Node.js Discord bot with extensive built-in functionality and voice commands
+              <div class="homepage-card-heading">liora</div>
+              Modular and extensible Node.js Discord bot
             </div>
           </a>
         </div>
@@ -98,7 +99,7 @@ image: assets/img/logo.png
         </div>
       </div>
       <hr>
-      <div class="content-wrapper-thin">
+      <div class="main-content content-wrapper-thin">
         <div class="homepage-block">
           <h4>Other Projects</h4>
           <a href="https://github.com/jackw01/serial-grapher">serial-grapher</a> Tool for graphing and logging CSV data received over a serial port<br>
