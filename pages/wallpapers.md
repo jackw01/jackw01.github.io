@@ -2,7 +2,7 @@
 layout: simple
 title: Wallpapers
 description:
-image: assets/img/logo.png
+image: logo.png
 footer: true
 ---
 

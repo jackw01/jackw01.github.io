@@ -2,7 +2,7 @@
 layout: simple
 title: About
 description: About jackw01.github.io
-image: assets/img/logo.png
+image: logo.png
 ---
 
 ## Links
