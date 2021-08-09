@@ -14,7 +14,7 @@ STL files for all parts as well as original Solidworks CAD files can be found in
 
 ![](../assets/projects/smallparts-cordstop0.png)
 
-Single piece 3D printable cord stop, tested to work with 2mm to 4.5mm diameter nylon and polyester circular cord. The force required to release the cord is around 1-2kg depending on the materials used, similar to other mass-produced cord stops. Materials with a low flexural modulus such as PETG, PA, PC, or PP are strongly recommended; PLA, ABS, and fiber filled materials will probably not work.
+Single piece 3D printable cord stop, tested to work with 2mm to 4.5mm diameter nylon and polyester circular cord. The force required to release the cord is around 1-2kg depending on the materials used, similar to commercially available cord stops. Materials with a low flexural modulus such as PETG, PA, PC, or PP are strongly recommended; PLA, ABS, and fiber filled materials will probably not work.
 
 ### Snap-In Zip Tie Mount for 2020 Extrusion
 

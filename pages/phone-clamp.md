@@ -36,3 +36,6 @@ Press the M3 screw into the knob so that the crush ribs inside the knob deform a
 
 ### License
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+#### Disclaimer
+<small>This design is not affiliated with, endorsed by or in any way associated with GoPro Inc. or its products and services. GoPro, HERO, Session, Karma and their respective logos are trademarks or registered trademarks of GoPro, Inc.</small>
