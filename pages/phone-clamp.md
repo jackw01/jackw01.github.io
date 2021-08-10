@@ -24,7 +24,7 @@ Parts required:
 * M5x20mm screw for GoPro mount
 * M5 hex nut for GoPro mount
 
-More GoPro mount-compatible designs are available [here](https://jackw01.github.io/modular-mounts).
+More GoPro mount-compatible designs are available [here](https://jackw01.github.io/pages/modular-mounts).
 
 ![](../assets/projects/phoneclamp-01.png)
 

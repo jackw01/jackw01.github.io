@@ -27,11 +27,13 @@ For using GoPro-compatible mounts with an Arca-Swiss style quick release tripod 
 
 ### Straight Links
 
+![](../assets/projects/modularmounts-10.png)
+
 ![](../assets/projects/modularmounts-03.png)
 
 ![](../assets/projects/modularmounts-02.png)
 
-High rigidity 50mm and 100mm straight mount extensions
+High rigidity 20mm, 50mm, and 100mm straight mount extensions
 
 ### Direction Changers
 
