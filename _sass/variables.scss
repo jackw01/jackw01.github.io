@@ -46,5 +46,7 @@ $code-bg-color-light: $mono-1 !default;
 // Gradients
 $cool-gradient-1: $hue-8 !default;
 $cool-gradient-2: $hue-1 !default;
+$cool-gradient-desat-1: desaturate(lighten($hue-8, 10%), 30%) !default;
+$cool-gradient-desat-2: desaturate(lighten($hue-1, 10%), 30%) !default;
 $warm-gradient-1: $hue-3 !default;
 $warm-gradient-2: $hue-6 !default;
