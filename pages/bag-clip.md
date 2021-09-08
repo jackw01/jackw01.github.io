@@ -20,6 +20,8 @@ footer: true
 
 **Update 2021-08-08:** Version 1.1, reduced material usage by ~10% and eliminated the need for support material.
 
+**Update 2021-09-08:** Added a mini version, which has a 68mm wide clamping area, uses ~50% less material than V1.1, and squeezes tighter (0.25mm gap vs 0.5mm) to more effectively seal small and thin bags.
+
 ![](../assets/projects/bagclip-05.png)
 
 ![](../assets/projects/bagclip-04.png)
