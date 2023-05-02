@@ -8,8 +8,7 @@ footer: true
 
 <a href="../assets/projects/deburhandle-stl.zip" class="button">Download STL Files (zip)</a>
 <a href="../assets/projects/deburhandle-v14 Final 2019-07.f3d" class="button">Download Fusion 360 Archive</a>
-
-[Originally published on Thingiverse](https://www.thingiverse.com/thing:3776972)
+<a href="https://www.printables.com/model/145014-deburring-tool-handle" class="button">View on Printables</a>
 
 ## Summary
 

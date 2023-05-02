@@ -8,7 +8,7 @@ footer: true
 
 <a href="../assets/projects/bagclip-stl.zip" class="button">Download STL Files</a>
 <!--<a href="https://workbench.grabcad.com/workbench/projects/gcCB1yP234_nZX1W01_76lmqixo17mWjXtkitTH1PlFbeV#/space/gcpb1Bv80sNtC4WU5TikOFvemghJoOa-dDuEDdxJYnSFva/folder/10515119" class="button">View on GrabCAD</a>-->
-<a href="https://www.thingiverse.com/thing:4889939" class="button">View on Thingiverse</a>
+<a href="https://www.printables.com/model/145013-high-strength-bag-clip" class="button">View on Printables</a>
 
 ## Summary
 

@@ -8,8 +8,7 @@ footer: true
 
 <a href="../assets/projects/phonestand-2019-10-10.stl" class="button">Download STL File</a>
 <a href="../assets/projects/phonestand-2019-10-10.f3d" class="button">Download Fusion 360 Archive</a>
-
-[Originally published on Thingiverse](https://www.thingiverse.com/thing:3334689)
+<a href="https://www.printables.com/model/145016-credit-card-sized-folding-phone-stand-v11" class="button">View on Printables</a>
 
 ## Summary
 

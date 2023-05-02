@@ -7,7 +7,7 @@ footer: true
 ---
 
 <a href="../assets/projects/hanger2-stl.zip" class="button">Download STL Files (zip)</a>
-<a href="https://www.thingiverse.com/thing:5022877" class="button">View on Thingiverse</a>
+<a href="https://www.printables.com/model/145011-compact-folding-backpack-hanger-v20" class="button">View on Printables</a>
 
 ## Summary
 

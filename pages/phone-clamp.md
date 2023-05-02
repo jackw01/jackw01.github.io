@@ -7,7 +7,7 @@ footer: true
 ---
 
 <a href="../assets/projects/phoneclamp-stl.zip" class="button">Download STL Files (zip)</a>
-<a href="https://www.thingiverse.com/thing:4928311" class="button">View on Thingiverse</a>
+<a href="https://www.printables.com/model/145012-phone-clamp-tripod-mount-gopro-compatible" class="button">View on Printables</a>
 
 ## Summary
 
