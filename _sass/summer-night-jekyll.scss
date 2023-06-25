@@ -594,7 +594,7 @@ ul.nav-links {
   justify-content: flex-start;
   align-items: center;
 
-  .homepage-card-container {
+  .homepage-card-container-third {
     flex: 1;
     //padding: 0.5rem;
 
@@ -606,6 +606,26 @@ ul.nav-links {
     @include medium {
       flex-basis: 50%;
       max-width: 50%;
+    }
+
+    @include small {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .homepage-card-container-half {
+    flex: 1;
+    //padding: 0.5rem;
+
+    @include large {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @include medium {
+      flex-basis: 100%;
+      max-width: 100%;
     }
 
     @include small {
