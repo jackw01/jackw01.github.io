@@ -274,15 +274,15 @@ a.secondary {
   }
 }
 
+li.active a {
+  font-weight: 700;
+}
+
 ul.nav-links {
   margin-top: 1rem;
   margin-bottom: 1rem;
   list-style-type: none;
   padding: 0;
-
-  li.active {
-    font-weight: 700;
-  }
 
   li {
     display: inline-block;
