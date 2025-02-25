@@ -20,13 +20,12 @@
       <h1 class="gradient-text">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.nav_items %}
-      {% assign current_url = page.url | downcase | split: '/' %}
       <ul class="nav">
         {% for link in site.nav_items %}
-        {% if current_url[2] == link.url %}
+        {% if page.url contains link.url %}
           <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% else %}
-          <li {><a href="{{ link.url }}">{{ link.text }}</a></li>
+          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
