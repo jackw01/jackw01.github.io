@@ -280,6 +280,10 @@ ul.nav-links {
   list-style-type: none;
   padding: 0;
 
+  li.active {
+    font-weight: 700;
+  }
+
   li {
     display: inline-block;
     margin: 0;
