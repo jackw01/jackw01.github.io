@@ -22,7 +22,11 @@
       {% if site.nav_items %}
       <ul class="nav">
         {% for link in site.nav_items %}
-        <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% if page.url == link.url %}
+          <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% else %}
+          <li {><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       {% endif %}
