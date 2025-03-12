@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     {% include head.html %}
-    <title>{{site.title}} | jackw01</title>
+    <title>{{site.title}} | alley cat engineering</title>
     {% if site.hide_first_h1 %}
     <style>
       #md-content>h1:first-child {
@@ -16,7 +16,6 @@
     {% endif %}
   </head>
   <body>
-    {% include header-nav.html %}
     <main id="content" class="main-content content-wrapper-thin" role="main">
       <h1 class="gradient-text">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -24,22 +23,12 @@
       <ul class="nav">
         {% for link in site.nav_items %}
         {% if page.url contains link.url %}
-          <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
+        <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% else %}
-          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
-      {% endif %}
-      {% if (site.github.is_project_page == true)  %}
-      <a href="{{ site.github.repository_url }}" class="button">View on GitHub</a>
-      {% endif %}
-      {% if site.npm_url %}
-      <a href="{{ site.npm_url }}" class="button">View on npm</a>
-      {% endif %}
-      {% if site.show_downloads %}
-      <a href="{{ site.github.zip_url }}" class="button">Download .zip</a>
-      <a href="{{ site.github.tar_url }}" class="button">Download .tar.gz</a>
       {% endif %}
       {% if site.custom_buttons %}
       {% for link in site.custom_buttons %}
@@ -50,6 +39,6 @@
         {{ content }}
       </div>
     </main>
-    {% include footer.html %}
+    {% include footer-alleycatengineering.html %}
   </body>
 </html>
