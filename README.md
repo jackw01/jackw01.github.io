@@ -1,6 +1,10 @@
 # jackw01.github.io
 My website at [jackw01.github.io](jackw01.github.io)
 
+## License
+
+The custom Jekyll theme made for this website is copyright 2025 jackw01 and may not be reused without permission. Content on the website may be licensed under more permissive licenses; see individual pages for details.
+
 ## Default layout configuration
 
 `site.hide_first_h1`: does what it says
