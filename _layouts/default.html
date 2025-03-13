@@ -24,12 +24,15 @@
       {% include header-nav.html %}
     {% endunless %}
     <main id="content" class="main-content content-wrapper-thin" role="main">
-      <h1 class="gradient-text">{{ site.title | default: site.github.repository_name }}</h1>
+      <h1 class="gradient-text" {% if site.alleycatengineering %} style="display: inline;" {% endif %}>{{ site.title | default: site.github.repository_name }}</h1>
+      {% if site.alleycatengineering %}
+      <span class="post-header-text">[a project by alley cat engineering - <a href="https://jackw01.github.io">jackw01</a> and <a href="https://soaporsalad.com">soaporsalad</a>]</span>
+      {% endif %}
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.nav_items %}
       <ul class="nav">
         {% for link in site.nav_items %}
-        {% if page.url contains link.url %}
+        {% if page.url contains link.url or link.url == index and page.url == "/" %}
           <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
         {% else %}
           <li><a href="{{ link.url }}">{{ link.text }}</a></li>
@@ -49,11 +52,8 @@
       {% endif %}
       {% if site.custom_buttons %}
       {% for link in site.custom_buttons %}
-      <a href="{{ link.url }}" class="button">{{ link.text }}</a>
+      <a href="{{ link.url }}" class="button" {% if site.alleycatengineering and forloop.first %} style="border-width: 3px;" {% endif %}>{{ link.text }}</a>
       {% endfor %}
-      {% endif %}
-      {% if site.alleycatengineering %}
-        ...
       {% endif %}
       <div id="md-content">
         {{ content }}
