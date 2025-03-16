@@ -1,12 +1,16 @@
+# used by SEO tag
 title: jackw01
 description: jackw01
-owner_name: Jack Whittaker
 url: https://jackw01.github.io
+author: Jack Whittaker
 logo: logo.png
 social:
   name: Jack Whittaker
   links:
     - https://github.com/jackw01
+    - https://www.linkedin.com/in/jack-whittaker-b35961183/
+google_site_verification: WVEP9YX5HRoViEFRMzY6MPy4xwbEH2PgxnJHjcvbFcE
+# end seo
 name: jackw01.github.io
 exclude:
   - Gemfile
