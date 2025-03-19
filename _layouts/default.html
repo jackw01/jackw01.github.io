@@ -56,6 +56,9 @@
       <a href="{{ link.url }}" class="button" {% if site.alleycatengineering and forloop.first %} style="border-width: 3px;" {% endif %}>{{ link.text }}</a>
       {% endfor %}
       {% endif %}
+      {% if site.nav_items %}
+      <hr>
+      {% endif %}
       <div id="md-content">
         {{ content }}
       </div>
