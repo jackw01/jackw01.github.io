@@ -24,7 +24,7 @@
       {% include header-nav.html %}
     {% endunless %}
     <main id="content" class="main-content content-wrapper-thin" role="main">
-      <h1 class="gradient-text" {% if site.alleycatengineering %} style="display: inline;" {% endif %}>{{ site.title_h1_override | default: site.github.repository_name }}</h1>
+      <h1 class="gradient-text" {% if site.alleycatengineering %} style="display: inline;" {% endif %}>{{ site.title_h1_override | default: page.title }}</h1>
       {% if site.alleycatengineering %}
       <span class="post-header-text">[a project by alley cat engineering - <a href="https://jackw01.github.io">jackw01</a> and <a href="https://soaporsalad.com">soaporsalad</a>]</span>
       {% endif %}

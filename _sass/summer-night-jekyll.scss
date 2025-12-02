@@ -1,3 +1,5 @@
+// compile: sass "_sass/summer-night-jekyll.scss" "assets/css/style.css"
+
 @import "normalize";
 @import "syntax";
 @import "variables";
@@ -198,6 +200,25 @@ a.secondary {
 }
 
 // Section: navigation and header
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: fade 0.3s ease both;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 .page-header, .page-nav-header {
   color: $heading-color;
