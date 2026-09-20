@@ -976,7 +976,7 @@ ul.nav-links {
   @media screen and (max-width: 680px) {
     .site-footer {
       padding: 1.5rem 0.5rem; } }
-  .site-footer span.float-left, .site-footer a {
+  .site-footer span.float-left, .site-footer a.social {
     margin-right: 0.5rem; }
   .site-footer span.float-right {
     margin-left: 0.5rem; }
